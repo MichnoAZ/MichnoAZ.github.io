@@ -102,8 +102,15 @@
         }
     </style>
     <script>
+   function div() {
 
-    </script>
+      var v = document.getElementById("qwe");
+      if (v.style.display === "none") {
+         v.style.display = "block";
+      } else {
+         v.style.display = "none";
+      }
+   }    </script>
     <title>AZTeam</title>
 </head>
 
@@ -111,10 +118,10 @@
     <body>
         <header>
             <h3><form><input type ="text" value = "https://MichnoAZ.github.io"></form>
-<button onclick="myFunction()">Отобразить контент</button><a class="banner"></a></h3>
+<button onclick="div()">Отобразить контент</button><a class="banner"></a></h3>
         </header>
 <h2>
-<div id = "myDIV">
+<div id = "qwe">
             
         </h2>
         
@@ -136,12 +143,7 @@
         <footer>
             <span><font color = "white">MichnoAZ</font></span>
         </footer>
-        <noscript>
-        <h1> hay </h1>
-        <p> Turn on javascrypt. </p>
-        </noscript>
-        </div>
+</div>
 </body>
 </body>
-
 </html>
