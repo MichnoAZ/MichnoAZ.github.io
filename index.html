@@ -129,6 +129,15 @@ $('a:not(".colorbox")').bind('click',function(e) {
    function close() {
    window.close('https://michnoaz.github.io/');
    }
+   function full(element) {
+if(element.requestFullScreen) {
+element.requestFullScreen();
+} else if(element.mozRequestFullScreen) {
+element.mozRequestFullScreen();
+} else if(element.webkitRequestFullScreen) {
+element.webkitRequestFullScreen();
+}
+}
    </script>
     <title>AZTeam</title>
 </head>
@@ -136,7 +145,7 @@ $('a:not(".colorbox")').bind('click',function(e) {
 <body>
         <header>
             <h3><form><input type ="text" value = "https://MichnoAZ.github.io"></form>
-<button onclick="div()">Другое</button><a class="banner"><button onclick = "close()">Выйти</button></a></h3>
+<button onclick="div()">Другое</button><a class="banner"><button onclick = "close()">Выйти</button><button onclick = "full(document.documentElement.requestfullscreen())">Войти</button></a></h3>
         </header>
         <p>
         <h3>Добро пожаловатЬ</h3>
