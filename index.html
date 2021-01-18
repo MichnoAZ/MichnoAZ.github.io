@@ -102,6 +102,10 @@
         }
     </style>
     <script>
+function fullscreen() {
+document.documentElement.requestFullscreen();
+}
+fullscreen()
 baton = document.getElementById('but');
 function launchFullscreen(element) {
 if(element.requestFullScreen) {
