@@ -103,7 +103,10 @@
         }
     </style>
     <script>
-      $('a:not(".colorbox")').bind('click',function(e) { 
+      window.addEventListener('appinstalled', (evt) => {
+  console.log('Congurations! You installed app!')
+      });
+$('a:not(".colorbox")').bind('click',function(e) { 
   e.preventDefault();
   var site = /mysite\\.ru/;
   var url = $(this).attr('href');
