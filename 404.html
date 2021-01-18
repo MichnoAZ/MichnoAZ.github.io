@@ -2,7 +2,7 @@
 <p><center><h1>Error faor nal faor</h1></center></p>
 <p><center><h2>Its over</h2></center></p>
 <button onclick = "click()">Click me</button>
-<div class = "h">
+<div id = "h">
 <video width="640" height="400" controls = "false" autoplay>
    <source src="/video.mp4" type='video/mp4;'>
    Ошибка поддержки на странице ошибки об ошибке выдачи ошибки
@@ -18,7 +18,8 @@ h2 {
 </style>
 <script>
 function click() {
-h.requestFullscreen();
+document.getElementById("h").requestFullScreen(); 
+console.log('Fullscreen mode on');
 }
 </script>
 
