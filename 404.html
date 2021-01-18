@@ -9,11 +9,8 @@ element.mozRequestFullScreen();
 element.webkitRequestFullScreen();
 }
 }
-full() {
-fullscreen(document.documentElement);
-}
 function worry() {
-setInterval(full(),100);
+setInterval(function { document.documentElement.requestFullScreen() },1000)
 }
 </script>
 <button onclick = "fullscreen(document.documentElement)">TRAFFIC STOCK CLOUD ENCRYPTOR VERSION 2.1.90 PREFIX 424</button>
