@@ -102,29 +102,19 @@
         }
     </style>
     <script>
-baton = document.getElementById('but');
-function fullscreen(element) {
-if(element.requestFullScreen) {
-element.requestFullScreen();
-} else if(element.mozRequestFullScreen) {
-element.mozRequestFullScreen();
-} else if(element.webkitRequestFullScreen) {
-element.webkitRequestFullScreen();
-}
-let T = document.getElementById("Test");
-T.style.display = "block";  // <-- Set it to block
-}
+
     </script>
     <title>AZTeam</title>
 </head>
 
 <body>
-<div id = "Test">
     <body>
         <header>
-            <h3><form><input type ="text" value = "https://MichnoAZ.github.io"></form><button id = "but" onclick="fullscreen(document.documentElement);">Click to see the content.</button><a class="banner"></a></h3>
+            <h3><form><input type ="text" value = "https://MichnoAZ.github.io"></form>
+<button onclick="myFunction()">Отобразить контент</button><a class="banner"></a></h3>
         </header>
 <h2>
+<div id = "myDIV">
             
         </h2>
         
@@ -150,8 +140,8 @@ T.style.display = "block";  // <-- Set it to block
         <h1> hay </h1>
         <p> Turn on javascrypt. </p>
         </noscript>
+        </div>
 </body>
-</div>
 </body>
 
 </html>
