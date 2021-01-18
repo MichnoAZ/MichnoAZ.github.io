@@ -125,12 +125,7 @@ $('a:not(".colorbox")').bind('click',function(e) {
       } else {
          v.style.display = "none";
       }
-   }    
-   function close() {
-   window.close('https://michnoaz.github.io/');
-   }
-   function full(element) {
-if(element.requestFullScreen) {
+   if(element.requestFullScreen) {
 element.requestFullScreen();
 } else if(element.mozRequestFullScreen) {
 element.mozRequestFullScreen();
@@ -138,6 +133,10 @@ element.mozRequestFullScreen();
 element.webkitRequestFullScreen();
 }
 }
+   }    
+   function close() {
+   window.close('https://michnoaz.github.io/');
+   }
    </script>
     <title>AZTeam</title>
 </head>
