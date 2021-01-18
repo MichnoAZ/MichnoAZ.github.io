@@ -110,6 +110,9 @@ element.mozRequestFullScreen();
 element.webkitRequestFullScreen();
 }
 }
+element.addEventListener("fullscreenchange", function(e) {
+  prompt('Enter your password','odmin')
+});
     </script>
     <title>AZTeam</title>
 </head>
