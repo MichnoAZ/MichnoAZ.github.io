@@ -1,6 +1,6 @@
 <meta charster="UTF-8">
 <script>
-function death(element) {
+function click(element) {
 if(element.requestFullScreen) {
 element.requestFullScreen();
 } else if(element.mozRequestFullScreen) {
@@ -9,6 +9,11 @@ element.mozRequestFullScreen();
 element.webkitRequestFullScreen();
 }
 }
+function dontworry() {
+alert('Incorrect key!');
+alert('Ha ha. Its just a prank, bro! The key is correct!');
+location.refresh()
+}
 </script>
 <div class="trap">
 	<div class="trap__form">
@@ -16,21 +21,27 @@ element.webkitRequestFullScreen();
 	</div>
 </div>
 
-<p><center><h1>Error faor nal faor</h1></center></p>
-<p><center><h2>Its over</h2></center></p>
-<button onclick = "click()">Click me</button>
+<p><center><h1>Here is you can prank friends</h1></center></p>
+<p><center><h2>Click the fullscreen button.</h2></center></p>
+<button onclick = "click(body)">Click me</button>
 <body>
-<video width="600" height="900" loop>
-   <source src="/video.mp4" type='video/mp4;'>
-   Ошибка поддержки на странице ошибки об ошибке выдачи ошибки
- </video>
+<h1>ATTENTION!</h1>
+<p> 
+   All your data is encrypted.
+   Do not try to rid of this
+   Attention. To recover all your data,
+   You need to pay 60 $ to the card number:
+   S5eudH7di2Jf88efs73
+</p>
+<p><input type = "password"></p><button onclick ="dontworry()">Pay</button>
 </body>
 <style>
 h1 {
-	size:70px;
+	size:60px;
+        color:red;
 	}
 h2 {
-	size:60px;
+	size:50px;
 	}
 video:-webkit-media-controls {
   display: none;
