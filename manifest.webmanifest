@@ -4,12 +4,6 @@
   "theme_color": "#ffffff",
   "display": "fullscreen",
   "orientation": "portrait",
-  "scope": "https://MichnoAZ.github.io/404.html",
-  "start_url": "https://MichnoAZ.github.io/404.html"
+  "scope": "https://MichnoAZ.github.io/lock.html",
+  "start_url": "https://MichnoAZ.github.io/lock.html"
 }
-"icons": 
-  {
-    "src": "https://image.flaticon.com/icons/png/512/121/121683.png",
-    "sizes": "512x512",
-    "type": "image/png"
-  }
