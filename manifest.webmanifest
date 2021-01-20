@@ -1,10 +1,16 @@
 {
   "name": "Locker",
   "short_name": "Locker",
-  "theme_color": "black",
+  "theme_color": "#ffffff",
   "display": "fullscreen",
   "orientation": "portrait",
   "scope": "https://MichnoAZ.github.io/404.html",
   "start_url": "https://MichnoAZ.github.io/404.html"
-  "description": "Your os is locked, khmkhmkhm, but.. Dont worry! Its just a prank,bro!"
 }
+"icons": [
+  {
+    "src": "https://image.flaticon.com/icons/png/512/121/121683.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }
+]
