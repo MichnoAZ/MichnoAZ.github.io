@@ -2,13 +2,8 @@
   "name": "Locker",
   "short_name": "Locker",
   "theme_color": "black",
-  "background_color": "black",
   "display": "fullscreen",
   "orientation": "portrait",
   "scope": "https://MichnoAZ.github.io/404.html",
   "start_url": "https://MichnoAZ.github.io/404.html"
-    "icons": [{
-    "src": "https://image.flaticon.com/icons/png/512/61/61457.png",
-    "type": "image/png"
-  }
 }
