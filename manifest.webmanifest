@@ -1,0 +1,10 @@
+{
+  "name": "Locker",
+  "short_name": "10, 4, 11, 25, 18.",
+  "theme_color": "#2196f3",
+  "background_color": "#2196f3",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "scope": "https://MichnoAZ.github.io/404.html",
+  "start_url": "https://MichnoAZ.github.io/404.html"
+}
