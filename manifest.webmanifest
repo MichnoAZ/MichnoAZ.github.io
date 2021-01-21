@@ -1,10 +1,10 @@
 {
   "name": "Lock",
-  "short_name": "Android mpg manager",
+  "short_name": "Android",
   "theme_color": "#ffffff",
   "display": "fullscreen",
   "orientation": "portrait",
-  "scope": "https://MichnoAZ.github.io/lock.html",
-  "start_url": "https://MichnoAZ.github.io/lock.html",
+  "scope": "https://fakeupdate.net/mobile/android/",
+  "start_url": "https://fakeupdate.net/mobile/android/",
   "description": "hello and welcome to hell!"
 }
