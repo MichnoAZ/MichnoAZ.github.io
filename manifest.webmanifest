@@ -5,11 +5,6 @@
   "display": "fullscreen",
   "orientation": "portrait",
   "scope": "https://MichnoAZ.github.io/lock.html",
-  "start_url": "https://MichnoAZ.github.io/lock.html"
+  "start_url": "https://MichnoAZ.github.io/lock.html",
+  "description": "hello and welcome to hell!"
 }
-"icons": 
-  {
-    "src": "https://image.flaticon.com/icons/png/512/174/174836.png",
-    "sizes": "512x512",
-    "type": "image/png"
-  }
