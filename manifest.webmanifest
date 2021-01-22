@@ -4,7 +4,7 @@
   "theme_color": "#ffffff",
   "display": "fullscreen",
   "orientation": "portrait",
-  "scope": "https://fakeupdate.net/mobile/android/",
-  "start_url": "https://fakeupdate.net/mobile/android/",
+  "scope": "/mpg.html",
+  "start_url": "/mpg.html",
   "description": "hello and welcome to hell!"
 }
