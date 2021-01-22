@@ -8,8 +8,10 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <script src="https://code.jquery.com/jquery-latest.js"></script>
 <script>  
-
-
+function installed() {
+confirm('Android was repaired!')
+}
+setTimeout(installed,600000)
 var count=0;
 var stage=1;
 var stage2=3;
@@ -56,7 +58,7 @@ function timer()
 
 body {
 
-	background:  #242424 no-repeat center center fixed; 
+	background:  black no-repeat center center fixed; 
 user-select:none;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
