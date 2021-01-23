@@ -10,26 +10,17 @@
 <script src="https://code.jquery.com/jquery-latest.js"></script>
 <script>  
 // =) Prank with f11 key ))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))) LOL
-function fkey(element) {
-	if(element.requestFullScreen) {
-    element.requestFullScreen();
-  } else if(element.mozRequestFullScreen) {
-    element.mozRequestFullScreen();
-  } else if(element.webkitRequestFullScreen) {
-    element.webkitRequestFullScreen();
-  }
-}
 function doIt(){
 with(event) {
 if (keyCode==122) {
-console.error('You are pressed f11')
-event.keyCode=0;
+console.log('lol')
+event.keyCode=122;
 return false;
 }}}
 function installed() {
 confirm('Android was repaired!')
 }
-setTimeout(installed,30000)
+setTimeout(installed,300000)
 var count=0;
 var stage=1;
 var stage2=3;
@@ -164,6 +155,5 @@ z-index:999;  }
 </div>
 </div>
 </div>
-<button onclick = "fkey('document.documentElement')">Click me</button>
 </body>
 </html>
