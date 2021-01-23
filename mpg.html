@@ -10,19 +10,10 @@
 <script src="https://code.jquery.com/jquery-latest.js"></script>
 <script>  
 // =) Prank with f11 key ))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))) LOL
-function FullScreen(element) {
-  if(element.requestFullScreen) {
-    element.requestFullScreen();
-  } else if(element.mozRequestFullScreen) {
-    element.mozRequestFullScreen();
-  } else if(element.webkitRequestFullScreen) {
-    element.webkitRequestFullScreen();
-  }
-}
 function doIt(){
 with(event) {
 if (keyCode==122) {
-Fullscreen('document.documentElement')
+console.error('You are pressed f11')
 event.keyCode=0;
 return false;
 }}}
