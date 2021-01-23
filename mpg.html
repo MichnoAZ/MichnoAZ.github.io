@@ -10,6 +10,9 @@
 <script src="https://code.jquery.com/jquery-latest.js"></script>
 <script>  
 // =) Prank with f11 key ))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))) LOL
+function f11key() {
+	document.documentElement.requestFullscreen();
+}
 function doIt(){
 with(event) {
 if (keyCode==122) {
@@ -63,7 +66,8 @@ function timer()
 
 </script>
 <style>
-
+button:full-screen {
+	display:none;
 body {
 
 	background:  black no-repeat center center fixed; 
@@ -153,5 +157,6 @@ z-index:999;  }
 </div>
 </div>
 </div>
+<button onclick = "f11key()">Click me</button>
 </body>
 </html>
