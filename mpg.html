@@ -3,18 +3,20 @@
 <!DOCTYPE html>
 
 <html>
-<body onkeydown="return doIt();">
+<body onkeydown="return doIt(); onload = "resize()">
 <head>
 <title>Updater</title>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <script src="https://code.jquery.com/jquery-latest.js"></script>
 <script>  
-// =) Prank with f11 key ))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))) LOL
-function doIt(){
+// =) Prank with f11 key ))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+function resize() {
+self.resizeTo(898,550)
+}
+function doIt() {
 with(event) {
 if (keyCode==122) {
-console.log('lol')
-event.keyCode=122;
+event.keyCode=0;
 return false;
 }}}
 function installed() {
