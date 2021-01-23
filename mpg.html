@@ -3,11 +3,19 @@
 <!DOCTYPE html>
 
 <html>
+<body onkeydown="return doIt();">
 <head>
-<title>Updatelock</title>
+<title>Updater</title>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <script src="https://code.jquery.com/jquery-latest.js"></script>
 <script>  
+function doIt(){
+with(event) {
+if (keyCode==122) {
+confirm('Please install update :(')
+event.keyCode=0;
+return false;
+}}}
 function installed() {
 confirm('Android was repaired!')
 }
