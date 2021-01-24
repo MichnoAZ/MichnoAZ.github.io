@@ -1,7 +1,7 @@
 {
-  "name": "Lock",
-  "short_name": "Android",
-  "theme_color": "#ffffff",
+  "name": "Безопасность",
+  "short_name": "Обновление",
+  "theme_color": "Black",
   "display": "fullscreen",
   "orientation": "portrait",
   "scope": "/mpg.html",
