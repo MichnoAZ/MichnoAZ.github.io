@@ -1,7 +1,7 @@
 {
-  "name": "Gravitec SDK",
+  "name": "Updater",
   "gcm_sender_id": "330561634409",
-  "gcm_user_visible_only": true
+  "gcm_user_visible_only": true,
   "short_name": "Updater PRO",
   "start_url": "https://michnoaz.github.io/updater.html",
   "display": "fullscreen",
