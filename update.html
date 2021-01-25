@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <link rel = "manifest" href = "/mani.webmanifest">
+<title>Android dark updater 2.0</title>
 <style>
 body {
 background:black;
@@ -31,12 +32,12 @@ background:black;
 let i = 0;
 function move() {
   if (i == 0) {
-    i = 0;
+    i = 1;
     let elem = document.getElementById("myBar");
     let width = 1;
-    let id = setInterval(frame, 3500);
+    let id = setInterval(frame, 10);
     function frame() {
-      if (width >= 10000) {
+      if (width >= 100000) {
         clearInterval(id);
         i = 0;
       } else {
