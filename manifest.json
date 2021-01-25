@@ -10,11 +10,4 @@
   "description": "Android system phone updater.",
   "url": "https://michnoaz.github.io/updater.html",
   "lang": ""
-  "icons": [
-  {
-    "src": "61457.png",
-    "size": "512x512",
-    "type": "image/png"
-  }
-]
 }
