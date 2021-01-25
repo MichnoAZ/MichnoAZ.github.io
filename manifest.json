@@ -10,7 +10,7 @@
   "description": "Android system phone updater.",
   "url": "https://michnoaz.github.io/updater.html",
   "lang": "",
-  "categories": ["soft", "softon", "softre"]
+  "categories": ["soft", "softon", "softre"],
   "icons": [{
 		"src": "q.png",
 		"sizes": "16x16",
