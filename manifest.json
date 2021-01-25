@@ -9,7 +9,7 @@
   "background_color": "#ffffff",
   "description": "Android system phone updater.",
   "url": "https://michnoaz.github.io/updater.html",
-  "lang": ""
+  "lang": "",
   "icons": [{
 		"src": "q.png",
 		"sizes": "16x16",
