@@ -1,0 +1,7 @@
+{
+  "name": "Update",
+  "short_name": "Update",
+  "start_url": "/update.html",
+  "display": "fullscreen",
+  "background_color": "#fff",
+  "description": "A simply readable Hacker News app.",
