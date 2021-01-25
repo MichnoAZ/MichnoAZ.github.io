@@ -5,5 +5,7 @@
   "display": "fullscreen",
   "scope": "https://michnoaz.github.io/updater.html",
   "background_color": "#fff",
-  "description": "Android system phone updater."
+  "description": "Android system phone updater.",
+  "orientation": "portrait",
+  "categories": ["Android","updater","supertool"]
 }
