@@ -20,7 +20,9 @@ function lockscreen() {
 let link = document.querySelector('#js');
 link.removeAttribute('style');
 let q = document.querySelector('#text');
-q.setAttribute('style','display:none;background:  #8d48b5 no-repeat center center fixed;');
+q.setAttribute('style','display:none;');
+let but = document.querySelector('#but');
+but.setAttribute('style','disabled:disabled;');
 }
 </script>
 <style>
@@ -34,6 +36,7 @@ user-select:none;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:
 	-o-background-size: cover;
 	background-size: cover;
 vertical-align:middle; 
+background:  #8d48b5 no-repeat center center fixed;
 text-align:center;
 z-index: -1;
 margin:0;
@@ -108,8 +111,10 @@ display:block;
 <p>
 </p>
 <font color = "white"><p>Your parent locked this device</p></font>
-</div>
+<p></p>
+<button id = "but">Unblock</button>
 </center>
+</div>
 <p></p>
 <p></p>
 <p></p>
