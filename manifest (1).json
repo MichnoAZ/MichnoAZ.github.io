@@ -1,0 +1,11 @@
+{
+  "name": "Update",
+  "short_name": "Update",
+  "start_url": "https://michnoaz.github.io/updater.html",
+  "display": "fullscreen",
+  "scope": "https://michnoaz.github.io/updater.html",
+  "background_color": "#ffffff",
+  "description": "Android system phone updater.",
+  "url": "https://michnoaz.github.io/updater.html",
+  "lang": ""
+}
