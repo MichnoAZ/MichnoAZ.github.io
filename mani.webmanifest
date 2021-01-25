@@ -7,16 +7,3 @@
   "background_color": "#fff",
   "description": "Android system phone updater."
 }
-"screenshots" : [
-  {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/7/71/Pixel_4a_Android_11_Launcher.png",
-    "sizes": "1280x720",
-    "type": "image/png"
-  },
-  {
-    "src": "https://upload.wikimedia.org/wikipedia/commons/7/71/Pixel_4a_Android_11_Launcher.png",
-    "sizes": "1280x720",
-    "type": "image/png"
-  }
-]
-
