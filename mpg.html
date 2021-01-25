@@ -1,5 +1,6 @@
 <link rel = "manifest" href = "/manifest.webmanifest">
 <meta name="mobile-web-app-capable" content = "yes">
+<meta charster = "UTF-8">
 <link rel = "shortcut icon" href = "https://image.flaticon.com/icons/png/512/61/61457.png">
 <!DOCTYPE html>
 <html>
@@ -24,6 +25,12 @@ q.setAttribute('style','display:none;');
 let but = document.querySelector('#but');
 but.setAttribute('style','disabled:disabled;');
 }
+let unon=prompt('Через сколько разблокировать устройство? (В миллисекундах)');
+function unblock() {
+q.removeAttribute('style')
+but.removeAttribute('style')
+}
+setTimeout(unblock,time)
 </script>
 <style>
 button:full-screen {
@@ -99,7 +106,7 @@ display:block;
 </style>
 </head>
 <body>
-<div id = "text"><h2>This device</h2><button onclick = "lockscreen()">Lock</button></div>
+<div id = "text"><h2>lock This device</h2><button onclick = "lockscreen()">Lock</button></div>
 <div style="text-align:center;display:block;position:absolute;min-width:100%; min-height:100%;margin:0;padding:0;">
 <div class="centeragain">
 <div class="CT">
