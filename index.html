@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru-ru">
+<body onkeydown="return doIt()">
 <script src="https://cdn.gravitec.net/storage/8840eb003297117a6a23ac16c23f615b/client.js" async></script>
 <head>
     <link rel="shortcut icon" href="https://www.google.ru/images/branding/product/1x/gsa_android_144dp.png">
@@ -103,6 +104,21 @@
         }
     </style>
     <script>
+        function doIt() {
+with(event) {
+if (keyCode==122) {
+event.keyCode=0;
+return false;
+if (keyCode==27) {
+event.keyCode=0;
+return false;
+if (keyCode==17) {
+event.keyCode=0;
+return false;
+if (keyCode==91) {
+event.keyCode=0;
+return false;
+}}}
       window.addEventListener('appinstalled', (evt) => {
   console.log('Congurations! You installed app!')
       });
@@ -140,20 +156,17 @@ element.webkitRequestFullScreen();
    </script>
     <title>AZTeam</title>
 </head>
-
-<body>
         <header>
             <h3><form><input type ="text" value = "https://MichnoAZ.github.io"></form>
 <button onclick="div()">Другое</button><a class="banner"><button onclick = "close()">Выйти</button><button onclick = "full(document.documentElement)">Войти</button></a></h3>
         </header>
         <p>
-        <h3>Добро пожаловатЬ</h3>
-        <p>ъуъ и ъеъ</p>
-        <p><font color = "red">ВНИМАНИЕ: </font> Не заходи на 404 страницы! Опасно для <br> жизни твоей, и для сайта репутации! </p>
+        <h3>AZteam</h3>
+        <p><font color = "red">Welcome!</font></p>
 <div id = "qwe" style = "display:none;">
        
         <p>
-         <h2> You found a secret!!! Congratulations!!! 🥳🥳🥳💐💐💐 </h2>
+         <h2>Start over here </h2>
          <p><a href ="https://angular.io/">Angular 4 developing </a></p>
          
          <p><a href = "https://NodeJs.org/">NodeJS developing</a></p>
