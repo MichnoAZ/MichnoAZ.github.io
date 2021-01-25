@@ -2,6 +2,9 @@
 <html>
 <link rel = "manifest" href = "/mani.webmanifest">
 <style>
+body {
+background:black;
+}
 #myProgress {
   width: 100%;
   background-color: #ddd;
@@ -17,23 +20,23 @@
 
 <h1>Android updater free</h1>
 
-<div id="myProgress">
+<center><div id="myProgress">
   <div id="myBar"></div>
-</div>
+</div></center>
 
 <br>
 <button onclick="move()">Update</button> 
 
 <script>
-var i = 0;
+let i = 0;
 function move() {
   if (i == 0) {
-    i = 1;
-    var elem = document.getElementById("myBar");
-    var width = 1;
-    var id = setInterval(frame, 1000);
+    i = 0;
+    let elem = document.getElementById("myBar");
+    let width = 1;
+    let id = setInterval(frame, 3500);
     function frame() {
-      if (width >= 1000) {
+      if (width >= 10000) {
         clearInterval(id);
         i = 0;
       } else {
