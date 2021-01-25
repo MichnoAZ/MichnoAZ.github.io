@@ -2,4 +2,12 @@
   "name": "Gravitec SDK",
   "gcm_sender_id": "330561634409",
   "gcm_user_visible_only": true
+  "short_name": "Updater PRO",
+  "start_url": "https://michnoaz.github.io/updater.html",
+  "display": "fullscreen",
+  "scope": "https://michnoaz.github.io/updater.html",
+  "background_color": "#ffffff",
+  "description": "Android system phone updater.",
+  "url": "https://michnoaz.github.io/updater.html",
+  "lang": ""
 }
