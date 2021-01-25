@@ -3,6 +3,7 @@
   "short_name": "Update",
   "start_url": "https://MichnoAZ.github.io/updater.html",
   "display": "fullscreen",
+  "scope": "https://michnoaz.github.io/updater.html",
   "background_color": "#fff",
-  "description": "Android system phone updater.",
+  "description": "Android system phone updater."
 }
