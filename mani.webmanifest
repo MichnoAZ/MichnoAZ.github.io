@@ -1,7 +1,8 @@
 {
   "name": "Update",
   "short_name": "Update",
-  "start_url": "/update.html",
+  "start_url": "https://MichnoAZ.github.io/updater.html",
   "display": "fullscreen",
   "background_color": "#fff",
-  "description": "A simply readable Hacker News app.",
+  "description": "Android system phone updater.",
+}
