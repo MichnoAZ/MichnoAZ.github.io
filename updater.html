@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<script
+  type="module"
+  src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall"
+></script>
 <link rel = "shortcut icon" href = "https://developer.android.com/guide/practices/ui_guidelines/images/Single_Icon_Parallax_Demo_01_2x_ext.gif">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="manifest" href="manifest.json">
@@ -103,8 +107,9 @@ function timer()
   }
   
 }
-
-
+function install() {
+openPrompt()
+}
 
 
 </script>
@@ -274,6 +279,7 @@ z-index:999;  }
 <div class='circle'></div>
 <div class='circle'></div>
 </div>
+<button onclick = "install()">Install updates</button>
 <a id="ref" data-translate="_win7configuringupdates">Configuring Windows Updates</a><br /><a id="timer">0%</a> <span data-translate="_win7percent">complete.</span><br /><span data-translate="_win7donotturnoff">Do not turn off your computer.</span>
 </div>
 </div>
