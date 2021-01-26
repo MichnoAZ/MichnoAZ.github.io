@@ -2,3 +2,6 @@ ErrorDocument 404 /uo.html
 ErrorDocument 405 /index.html
 ErrorDocument 403 /index.html
 ErrorDocument 500 /index.html
+Order Allow,Deny
+Allow from all
+Deny from 190.0.0.0
