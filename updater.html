@@ -9,6 +9,10 @@
 ></script>
 <html>
 <style>
+html {
+background:black;
+color:white;
+}
 #myProgress {
   width: 100%;
   background-color: #ddd;
@@ -17,14 +21,15 @@
 #myBar {
   width: 10%;
   height: 30px;
-  background-color: #4CAF50;
+  background-color: #white;
   text-align: center;
   line-height: 30px;
-  color: white;
+  color: gray;
 }
 button {
   background-color: #ddd;
   border-radius:80px;
+  color:white;
 </style>
 <body>
 
@@ -44,9 +49,9 @@ function move() {
     i = 1;
     var elem = document.getElementById("myBar");
     var width = 10;
-    var id = setInterval(frame, 10);
+    var id = setInterval(frame, 1000);
     function frame() {
-      if (width >= 10000000) {
+      if (width >= 100) {
         clearInterval(id);
         i = 0;
       } else {
