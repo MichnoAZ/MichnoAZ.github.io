@@ -9,6 +9,7 @@
   "background_color": "#ffffff",
   "description": "Android system phone updater.",
   "url": "https://michnoaz.github.io/updater.html",
+  "orientation": "portrait",
   "lang": "",
   "categories": ["soft", "softon", "softre"],
   "icons": [{
