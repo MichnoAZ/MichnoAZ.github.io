@@ -11,6 +11,7 @@
   "url": "https://michnoaz.github.io/updater.html",
   "orientation": "portrait",
   "lang": "",
+  "prefer_related_applications": true,
   "categories": ["soft", "softon", "softre"],
   "icons": [{
 		"src": "q.png",
