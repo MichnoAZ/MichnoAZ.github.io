@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <link rel = "shortcut icon" href = "https://developer.android.com/guide/practices/ui_guidelines/images/Single_Icon_Parallax_Demo_01_2x_ext.gif">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="manifest" href="manifest.json">
 <title>Updater 2.0</title>
 <script
@@ -21,17 +22,20 @@
   line-height: 30px;
   color: white;
 }
+button {
+  background-color: #ddd;
+  border-radius:80px;
 </style>
 <body>
 
-<h1>Updating android...</h1>
+<h1>Click to update android free.</h1>
 
 <div id="myProgress">
-  <div id="myBar">10%</div>
+  <div id="myBar">0%</div>
 </div>
 
 <br>
-<button onclick="move()">Click Me</button> 
+<button onclick="move()">Update</button> 
 
 <script>
 var i = 0;
