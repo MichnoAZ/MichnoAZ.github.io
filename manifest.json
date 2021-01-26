@@ -1,37 +1,49 @@
 {
-  "name": "Updater",
-  "gcm_sender_id": "330561634409",
-  "gcm_user_visible_only": true,
-  "short_name": "Updater PRO",
-  "start_url": "https://michnoaz.github.io/updater.html",
+  "name": "AZapp",
+  "short_name": "AZapp",
+  "start_url": "/updater.html",
   "display": "fullscreen",
-  "scope": "https://michnoaz.github.io/updater.html",
-  "background_color": "#ffffff",
-  "description": "Android system phone updater.",
-  "url": "https://michnoaz.github.io/updater.html",
-  "orientation": "portrait",
-  "lang": "",
-  "prefer_related_applications": true,
-  "categories": ["soft", "softon", "softre"],
-  "icons": [{
-		"src": "q.png",
-		"sizes": "16x16",
-		"type": "image/png"
-	}, {
-		"src": "w.png",
-		"sizes": "16x16",
-		"type": "image/png"
-	}],
-        "screenshots" : [
-  {
-    "src": "q.png",
-    "sizes": "16x16",
-    "type": "image/png"
-  },
-  {
-    "src": "w.png",
-    "sizes": "16x16",
-    "type": "image/png"
-  }
-]
+  "description": "Enhance your work day and solve your cross platform whiteboarding needs with webboard! Draw text, shapes, attach images and more and share those whiteboards with anyone through OneDrive!",
+  "screenshots": [
+    {
+      "src": "https://cdn.glitch.com/ce7722b1-a36b-4606-b878-ee34cb468bfa%2Finstallsnip.png?v=1573316626664",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.glitch.com/ce7722b1-a36b-4606-b878-ee34cb468bfa%2Fpwainstall.glitch.me_(Pixel%202%20XL).png?v=1591213289513",
+      "sizes": "256x256",
+      "type":"image/png"
+    },
+    {
+      "src": "https://cdn.glitch.com/ce7722b1-a36b-4606-b878-ee34cb468bfa%2Finstallsnip.png?v=1573316626664",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.glitch.com/ce7722b1-a36b-4606-b878-ee34cb468bfa%2Finstallsnip.png?v=1573316626664",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ],
+  "features": [
+    "Cross Platform",
+    "low-latency inking",
+    "fast",
+    "useful AI"
+  ],
+  "icons": [
+    {
+      "src": "https://cdn.glitch.com/ce7722b1-a36b-4606-b878-ee34cb468bfa%2F289616-256.png?v=1573316684080",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.glitch.com/ce7722b1-a36b-4606-b878-ee34cb468bfa%2F289616-512.png?v=1573316715288",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#1976d2",
+  "theme_color": "#1976d2"
 }
