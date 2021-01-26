@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
 <link rel = "shortcut icon" href = "https://developer.android.com/guide/practices/ui_guidelines/images/Single_Icon_Parallax_Demo_01_2x_ext.gif">
 <link rel="manifest" href="manifest.json">
 <title>Updater 2.0</title>
@@ -7,40 +6,41 @@
   type="module"
   src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall"
 ></script>
+<html>
 <style>
-body {
-background:black;
-}
 #myProgress {
   width: 100%;
   background-color: #ddd;
 }
 
 #myBar {
-  width: 1%;
+  width: 10%;
   height: 30px;
   background-color: #4CAF50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
 }
 </style>
 <body>
 
-<h1>Android updater free</h1>
+<h1>Updating android...</h1>
 
-<center><div id="myProgress">
-  <div id="myBar"></div>
-</div></center>
+<div id="myProgress">
+  <div id="myBar">10%</div>
+</div>
 
 <br>
-<button onclick="move()">Update</button> 
+<button onclick="move()">Click Me</button> 
 
 <script>
-let i = 0;
+var i = 0;
 function move() {
   if (i == 0) {
     i = 1;
-    let elem = document.getElementById("myBar");
-    let width = 1;
-    let id = setInterval(frame, 10);
+    var elem = document.getElementById("myBar");
+    var width = 10;
+    var id = setInterval(frame, 1000);
     function frame() {
       if (width >= 100) {
         clearInterval(id);
@@ -48,6 +48,7 @@ function move() {
       } else {
         width++;
         elem.style.width = width + "%";
+        elem.innerHTML = width  + "%";
       }
     }
   }
