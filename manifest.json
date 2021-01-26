@@ -20,4 +20,16 @@
 		"sizes": "16x16",
 		"type": "image/png"
 	}]
+        "screenshots" : [
+  {
+    "src": "q.png",
+    "sizes": "16x16",
+    "type": "image/png"
+  },
+  {
+    "src": "w.png",
+    "sizes": "16x16",
+    "type": "image/png"
+  }
+]
 }
