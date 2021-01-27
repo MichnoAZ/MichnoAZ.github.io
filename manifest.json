@@ -1,9 +1,9 @@
 {
-  "name": "AZapp",
-  "short_name": "AZapp",
-  "start_url": "/updater.html",
+  "name": "SuperPrankerPRO",
+  "short_name": "Very cool app",
+  "start_url": "/locked.html",
   "display": "fullscreen",
-  "description": "Enhance your work day and solve your cross platform whiteboarding needs with webboard! Draw text, shapes, attach images and more and share those whiteboards with anyone through OneDrive!",
+  "description": "Use this cool app to prank friends, with this app you can do it!",
   "screenshots": [
     {
       "src": "https://cdn.glitch.com/ce7722b1-a36b-4606-b878-ee34cb468bfa%2Finstallsnip.png?v=1573316626664",
