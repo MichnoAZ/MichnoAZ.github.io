@@ -34,13 +34,13 @@
   ],
   "icons": [
     {
-      "src": "https://cdn.glitch.com/ce7722b1-a36b-4606-b878-ee34cb468bfa%2F289616-256.png?v=1573316684080",
-      "sizes": "256x256",
+      "src": "/q.png",
+      "sizes": "16x16",
       "type": "image/png"
     },
     {
-      "src": "https://cdn.glitch.com/ce7722b1-a36b-4606-b878-ee34cb468bfa%2F289616-512.png?v=1573316715288",
-      "sizes": "512x512",
+      "src": "/w.png",
+      "sizes": "16x16",
       "type": "image/png"
     }
   ],
