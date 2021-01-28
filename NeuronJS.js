@@ -8,9 +8,13 @@ function customTag(tagName,fn){
         }
 }
  
-function extand(element) {
-        el = document.querySelector(element)
-        el.setAttribute('style','border:30px;')
+function extand() {
+        console.warn('New element created')
 }   
- 
-customTag("new-border",extand);
+customTag("neuron",extand);
+function setTitle(title) {
+document.title = title;
+}
+
+
+
