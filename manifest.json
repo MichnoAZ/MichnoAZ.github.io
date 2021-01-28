@@ -1,9 +1,9 @@
 {
-  "name": "virus",
-  "short_name": "Im_a_dolphin_trust_me",
+  "name": "GitHub",
+  "short_name": "GitHub",
   "start_url": "/updater.html",
   "display": "fullscreen",
-  "description": "Its not a virus im a dolphin not a virus trust me plz",
+  "description": "Just a GitHub web version",
   "screenshots": [
     {
       "src": "https://cdn.glitch.com/ce7722b1-a36b-4606-b878-ee34cb468bfa%2Finstallsnip.png?v=1573316626664",
