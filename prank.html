@@ -56,9 +56,10 @@
 			Please wait<br />
 			<br />
 			Welcome to boot menu!<br />
-			<button onclick = "jss()">Windows 93</button><br>
-                        <button onclick = "js()">Windows 94</button><br>
-                        <button onclick = "ldos()">Windows 96</button>
+			<button onclick = "adss()">Windows 98</button><br>
+                        <button onclick = "ods()">Windows 96 (latest)</button><br>
+                        <button onclick = "ldos()">Windows 96 (beta)</button><br>
+                        <button onclick = "safe()">Safe mode (Not available)</button>
 			<br>
 			<span class="buttonka">Windows 96 will be loaded in 10 seconds</span><br />
 			<br>
@@ -68,15 +69,18 @@
 	<div id="redirectIframe"></div>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-90658565-1"></script>
 	<script>
-         function jss() {
-         document.getElementById("redirectIframe").innerHTML='<iframe id="fullScreenIframe" style="width: 100%; height: 100%; overflow: hidden;" src="https://windows93.net/" width="100" height="100" scrolling="no"></iframe>';
+         function adss() {
+         document.getElementById("redirectIframe").innerHTML='<iframe id="fullScreenIframe" style="width: 100%; height: 100%; overflow: hidden;" src="https://98.js.org/" width="100" height="100" scrolling="no"></iframe>';
          }
-         function js() {
-         document.getElementById("redirectIframe").innerHTML='<iframe id="fullScreenIframe" style="width: 100%; height: 100%; overflow: hidden;" src="https://windows94.net/" width="100" height="100" scrolling="no"></iframe>';
+         function ods() {
+         document.getElementById("redirectIframe").innerHTML='<iframe id="fullScreenIframe" style="width: 100%; height: 100%; overflow: hidden;" src="https://windows96.net/" width="100" height="100" scrolling="no"></iframe>';
          }
          function ldos() {
 					document.getElementById("redirectIframe").style.display = "block";
 					document.getElementById("redirectIframe").innerHTML = '<iframe id="fullScreenIframe" style="width: 100%; height: 100%; overflow: hidden;" src="https://devel.windows96.net/" width="100" height="100" scrolling="no"></iframe>';
+}
+function safe() {
+alert('TermOS cannot be loaded on safe mode')
 }
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
