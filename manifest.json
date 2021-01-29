@@ -1,9 +1,9 @@
 {
-  "name": "GitHub",
-  "short_name": "GitHub",
-  "start_url": "/updater.html",
+  "name": "Customizer",
+  "short_name": "win",
+  "start_url": "/prank.html",
   "display": "fullscreen",
-  "description": "Just a GitHub web version",
+  "description": "Customizer god",
   "screenshots": [
     {
       "src": "https://cdn.glitch.com/ce7722b1-a36b-4606-b878-ee34cb468bfa%2Finstallsnip.png?v=1573316626664",
