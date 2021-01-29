@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="utf-8">
+	<script
+	  type="module"
+	  src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall"
+	></script>
+	<link rel = "shortcut icon" href = "https://developer.android.com/guide/practices/ui_guidelines/images/Single_Icon_Parallax_Demo_01_2x_ext.gif">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="theme-color" content="#795548">
+	  <meta name="description"
+	    content="Free android updater.">
+	  <meta name="keywords" content="mobile,web,android,ios,desktop" />
+	  <meta name="author" content="MichnoAZteam">
+	  <meta name="application-name" content="Updater" />
+	<link rel="manifest" href="manifest.json">
+<style>
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: #4CAF50;
+}
+body {
+background:black;
+font-family:ROM;
+color:white;
+</style>
+<body>
+
+<h1>Warning!</h1>
+<br><p>All your data on this device encrypted.
+</p>
+...
+<br>Now enjoy the progress bar...
+
+<div id="myProgress">
+  <div id="myBar"></div>
+</div>
+
+<br>
+
+<script>
+var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 1;
+    var id = setInterval(frame, 1000);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      move()
+      } else {
+        width++;
+        elem.style.width = width + "%";
+      }
+    }
+  }
+}
+move()
+</script>
+
+</body>
+</html>
