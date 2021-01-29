@@ -53,9 +53,9 @@
 			<br />
 		</div>
 		<div class="screen" id="screen5">
-			Please wait<br />
-			<br />
-			Welcome to boot menu!<br />
+			Please wait<br>
+			<br>
+			Welcome to boot menu!<br>
 			<button onclick = "adss()">Terminal</button><br>
                         <button onclick = "ods()">HackTyper</button><br>
                         <button onclick = "ldos()">Windows 96 (beta)</button><br>
@@ -71,9 +71,7 @@
 	<script>
          function adss() {
          document.getElementById("redirectIframe").innerHTML='<iframe id="fullScreenIframe" style="width: 100%; height: 100%; overflow: hidden;" src="https://geektyper.com/mobile/" width="100" height="100" scrolling="no"></iframe>';
-         }
-         function ods() {
-         document.getElementById("redirectIframe").innerHTML='<iframe id="fullScreenIframe" style="width: 100%; height: 100%; overflow: hidden;" src="https://hackertyper.net/" width="100" height="100" scrolling="no"></iframe>';
+         document.getElementById("redirectIframe").style.display = "block";
          }
          function ldos() {
 					document.getElementById("redirectIframe").style.display = "block";
