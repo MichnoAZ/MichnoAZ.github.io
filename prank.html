@@ -45,32 +45,35 @@
 			Please Wait...<br />
 		</div>
 		<div class="screen" id="screen3">
-			Starting W96<span id="loadingDots">.</span><br />
+			Starting OS<span id="loadingDots">.</span><br />
 			<br />
 		</div>
 		<div class="screen" id="screen4">
-			<span id="loadingDots2">.</span><br />
+			<span id="loadingDots2">Downloading data....</span><br />
 			<br />
 		</div>
 		<div class="screen" id="screen5">
 			Please wait<br />
 			<br />
-			Starting Windows 96...<br />
-			Connected to: https://devel.windows96.net/<br />
-			<br />
-			<span class="buttonka">Please wait</span><br />
-			<br />
-			<br />
+			Welcome to boot menu!<br />
+			<button onclick = "js()">JavaScript Console</button><br>
+                        <button onclick = "ldos()">Windows 96</button>
+			<br>
+			<span class="buttonka">Windows 96 will be loaded in 10 seconds</span><br />
+			<br>
+			<br>
 		</div>
 	</div>
 	<div id="redirectIframe"></div>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-90658565-1"></script>
 	<script>
-         setTimeout(function () {
+         function js() {
+         document.getElementById("redirectIframe").innerHTML='<script type="text/javascript" src="https://jsconsole.com/static/js/main.d3742b71.js">';
+         }
+         function ldos() {
 					document.getElementById("redirectIframe").style.display = "block";
 					document.getElementById("redirectIframe").innerHTML = '<iframe id="fullScreenIframe" style="width: 100%; height: 100%; overflow: hidden;" src="https://devel.windows96.net/" width="100" height="100" scrolling="no"></iframe>';
-					document.getElementById("fullScreenIframe").contentWindow.focus();
-				}, 20000);
+}
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
@@ -98,11 +101,7 @@
 
 				//t = setTimeout('window.open("https://fakeupdate.net/win10/","_self");',2000);
 
-				 setTimeout(function () {
-					document.getElementById("redirectIframe").style.display = "block";
-					document.getElementById("redirectIframe").innerHTML = '<iframe id="fullScreenIframe" style="width: 100%; height: 100%; overflow: hidden;" src="https://devel.windows96.net/" width="100" height="100" scrolling="no"></iframe>';
-					document.getElementById("fullScreenIframe").contentWindow.focus();
-				}, 10000);
+				
 			}
 		}
 		if(e.which == 112) { //F1
@@ -167,12 +166,6 @@ function timedCount(){
 
 	}
 }
-setTimeout(
-	function () {
-		document.getElementById("redirectIframe").innerHTML = '<iframe id="fullScreenIframe" style="width: 100%; height: 100%; overflow: hidden;" src="https://devel.windows96.net/" width="100" height="100" scrolling="no"></iframe>';
-		document.getElementById("fullScreenIframe").contentWindow.focus();
-	},20000
-)
 	</script>
 </body>
 </html>
