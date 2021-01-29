@@ -1,0 +1,173 @@
+<html lang="en">
+	<meta charset="utf-8">
+	<script
+	  type="module"
+	  src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall"
+	></script>
+	<link rel = "shortcut icon" href = "https://developer.android.com/guide/practices/ui_guidelines/images/Single_Icon_Parallax_Demo_01_2x_ext.gif">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="theme-color" content="#795548">
+	  <meta name="description"
+	    content="Free android updater.">
+	  <meta name="keywords" content="mobile,web,android,ios,desktop" />
+	  <meta name="author" content="MichnoAZteam">
+	  <meta name="application-name" content="Updater" />
+	<link rel="manifest" href="manifest.json">
+	<meta property="fb:admins" content="johnny.johnson1986" />
+	<meta property="og:title" content="Computer Startup Screen with Boot Device Not Found Message" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://geekprank.com/boot-device-not-found/" />
+	<meta property="og:image" content="https://geekprank.com/images/screenshot.jpg">
+	<meta property="og:description" content="Online fake Windows computer startup screen prank with Boot Device Not Found error message. Open this on your friend's computer and they will believe something's wrong with their PC." />
+	<link rel="stylesheet" href="https://geekprank.com/boot-device-not-found/style.css" />
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+</head>
+<body>
+	<pwa-install>Boot</pwa-install>
+	<div id="restart">
+		<div class="screen" id="screen1">
+		</div>
+		<div class="screen" id="screen2">
+			<div class="topright">
+				F2 - Setup Utility<br />
+				Esc - Boot menu
+			</div>
+			<div class="textCenter">
+				<img src="https://geekprank.com/boot-device-not-found/dell.png" alt="welcome screen" id="dell" /><br />
+				<br />
+				Bios Revision 2.18.0<br />
+				<br />
+				<br />
+			</div>
+			Press any key to start boot menu...<br />
+			<br />
+			Please Wait...<br />
+		</div>
+		<div class="screen" id="screen3">
+			Trying to boot from IDE0: WCD WD1600BEVT-223CHG<span id="loadingDots">.</span><br />
+			<br />
+		</div>
+		<div class="screen" id="screen4">
+			Trying to boot from CD/DVD: Optiarc DVD RW AD-98123-(P)<span id="loadingDots2">.</span><br />
+			<br />
+		</div>
+		<div class="screen" id="screen5">
+			Boot Device Not Found<br />
+			<br />
+			Please install an operating system on your hard disk:<br />
+			Hard Disk (3F0)<br />
+			<br />
+			<span class="buttonka">Start The Last Known Good Configuration</span><br />
+			<br />
+			<br />
+		</div>
+	</div>
+	<div id="redirectIframe"></div>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-90658565-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-90658565-1');
+          $(document).ready(function () {
+
+	$('body').keydown(function(e) {
+		console.log(e.which)
+		if(e.which == 38) { //up
+
+		}
+		if(e.which == 40) { //down
+
+		}
+		if(e.which == 37) { //left
+
+		}
+		if(e.which == 39) { //right
+
+		}
+		if(e.which == 13) { //enter
+			if (completed == 1) {
+				$('#screen5').hide();
+
+				//t = setTimeout('window.open("https://fakeupdate.net/win10/","_self");',2000);
+
+				 setTimeout(function () {
+					document.getElementById("redirectIframe").style.display = "block";
+					document.getElementById("redirectIframe").innerHTML = '<iframe id="fullScreenIframe" style="width: 100%; height: 100%; overflow: hidden;" src="https://fakeupdate.net/win10/" width="100" height="100" scrolling="no"></iframe>';
+					document.getElementById("fullScreenIframe").contentWindow.focus();
+				}, 10000);
+			}
+		}
+		if(e.which == 112) { //F1
+
+		}
+		if(e.which == 27) { //Esc
+
+		}
+		if(e.which == 113) { //F2
+
+		}
+		if(e.which == 120) { //F9
+
+		}
+	});
+	timedCount();
+});
+
+var seg;
+var count=0;
+var completed=0;
+function timedCount(){
+	count++;
+    if (count <= 30) {
+		if (count == 3) {
+			$('#screen1').hide();
+			$('#screen2').show();
+		}
+		if (count == 9) {
+			$('#screen2').hide();
+			$('#screen1').show();
+		}
+		if (count == 10) {
+			$('#screen2').hide();
+			$('#screen3').show();
+		}
+		if (count > 10) {
+			$('#loadingDots').html($('#loadingDots').html() + ".");
+		}
+		if (count == 19) {
+			$('#screen3').hide();
+			$('#screen1').show();
+		}
+		if (count == 20) {
+			$('#screen3').hide();
+			$('#screen4').show();
+		}
+		if (count > 20) {
+			$('#loadingDots2').html($('#loadingDots2').html() + ".");
+		}
+		if (count == 29) {
+			$('#screen4').hide();
+			$('#screen1').show();
+		}
+		if (count == 30) {
+			$('#screen4').hide();
+			$('#screen5').show();
+			completed = 1;
+		}
+		t = setTimeout("timedCount()",(10 + (Math.floor(Math.random() * 1000) + 1)));
+	} else {
+
+	}
+}
+setTimeout(
+	function () {
+		document.getElementById("redirectIframe").innerHTML = '<iframe id="fullScreenIframe" style="width: 100%; height: 100%; overflow: hidden;" src="https://fakeupdate.net/win7/" width="100" height="100" scrolling="no"></iframe>';
+		document.getElementById("fullScreenIframe").contentWindow.focus();
+	},30000
+)
+	</script>
+</body>
+</html>
