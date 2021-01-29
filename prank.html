@@ -59,6 +59,7 @@
 			<button onclick = "adss()">Terminal</button><br>
                         <button onclick = "ods()">HackOS</button><br>
                         <button onclick = "ldos()">Windows 96 (beta)</button><br>
+                        <button onclick = "sst()">SpeedTest</button><br>
                         <button onclick = "safe()">Safe mode (Not available)</button>
 			<br>
 			<span class="buttonka">Windows 96 will be loaded in 10 seconds</span><br />
@@ -73,6 +74,10 @@
          document.getElementById("redirectIframe").innerHTML='<iframe id="fullScreenIframe" style="width: 100%; height: 100%; overflow: hidden;" src="https://geektyper.com/mobile/" width="100" height="100" scrolling="no"></iframe>';
          document.getElementById("redirectIframe").style.display = "block";
          }
+function sst() {
+document.getElementById("redirectIframe").innerHTML='<iframe id="fullScreenIframe" style="width: 100%; height: 100%; overflow: hidden;" src="https://SpeedTest.net/" width="100" height="100" scrolling="no"></iframe>';
+document.getElementById("redirectIframe").style.display = "block";
+}
          function ods() {
 document.getElementById("redirectIframe").innerHTML='<iframe id="fullScreenIframe" style="width: 100%; height: 100%; overflow: hidden;" src="https://hacker-simulator.com/" width="100" height="100" scrolling="no"></iframe>';
 document.getElementById("redirectIframe").style.display = "block";
