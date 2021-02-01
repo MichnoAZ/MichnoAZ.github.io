@@ -154,26 +154,26 @@ var count=0;
 var completed=0;
 function timedCount(){
 	count++;
-    if (count <= 30) {
+    if (count <= 8) {
 		if (count == 3) {
 			$('#screen1').hide();
 			$('#screen2').show();
 		}
-		if (count == 9) {
+		if (count == 4) {
 			$('#screen2').hide();
 			$('#screen1').show();
 		}
-		if (count > 10) {
+		if (count > 5) {
 			$('#loadingDots').html($('#loadingDots').html() + ".");
 		}
-		if (count > 20) {
+		if (count > 6) {
 			$('#loadingDots2').html($('#loadingDots2').html() + ".");
 		}
-		if (count == 29) {
+		if (count == 7) {
 			$('#screen4').hide();
 			$('#screen1').show();
 		}
-		if (count == 30) {
+		if (count == 8) {
 			$('#screen4').hide();
 			$('#screen5').show();
 			completed = 1;
