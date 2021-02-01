@@ -44,14 +44,7 @@
 			<br />
 			Please Wait...<br />
 		</div>
-		<div class="screen" id="screen3">
-			Starting OS<span id="loadingDots">.</span><br />
-			<br />
-		</div>
-		<div class="screen" id="screen4">
-			<span id="loadingDots2">Downloading data....</span><br />
-			<br />
-		</div>
+	
 		<div class="screen" id="screen5">
 			Please wait<br>
 			<br>
@@ -170,20 +163,8 @@ function timedCount(){
 			$('#screen2').hide();
 			$('#screen1').show();
 		}
-		if (count == 10) {
-			$('#screen2').hide();
-			$('#screen3').show();
-		}
 		if (count > 10) {
 			$('#loadingDots').html($('#loadingDots').html() + ".");
-		}
-		if (count == 19) {
-			$('#screen3').hide();
-			$('#screen1').show();
-		}
-		if (count == 20) {
-			$('#screen3').hide();
-			$('#screen4').show();
 		}
 		if (count > 20) {
 			$('#loadingDots2').html($('#loadingDots2').html() + ".");
