@@ -17,5 +17,16 @@ color:white;
 <center></center><br>
 <center></center><br>
 <center></center><br>
-<center>TermOS</center><br>
+<center>Time left:</center><br>
+<timer></timer>
 </body>
+<script>
+let i = 60;
+setInterval(function() {
+i = i - 1;
+timer.innerHTML = i;
+}, 1000);
+if (i == 0) {
+alert('Your device is unblocked');
+}
+</script>
