@@ -214,6 +214,14 @@ window.onpopstate = function(event) {
             return false;
         }
     }
+function click() {
+console.log('disabled');
+} 
+function press(){
+console.log('disabled');
+}
+document.onmousedown=click;
+document.onkeydown=press;
 	</script>
 </body>
 </html>
