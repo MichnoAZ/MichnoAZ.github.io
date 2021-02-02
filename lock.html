@@ -22,15 +22,14 @@ color:white;
 <center></center><br>
 <center></center><br>
 <center>Time left:</center><br>
-<timer></timer>
+<footer></footer>
 </body>
 <script>
-let i = 60;
+let i = 0;
 setInterval(function() {
-i = i - 1;
-timer.innerHTML = i;
+footer.innerHTML = i++;
 }, 1000);
-if (i == 0) {
+while (i == 60) {
 alert('Your device is unblocked');
 }
 </script>
