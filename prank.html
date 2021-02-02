@@ -189,6 +189,10 @@ function confirmExit(){
     alert('False');
     return false;
 }
+history.pushState(null, null, location.href);
+window.onpopstate = function(event) {
+    history.go(1);
+};
 	</script>
 </body>
 </html>
