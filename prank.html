@@ -184,6 +184,11 @@ function timedCount(){
 
 	}
 }
+window.onbeforeunload = confirmExit;
+function confirmExit(){
+    alert('False');
+    return false;
+}
 	</script>
 </body>
 </html>
