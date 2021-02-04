@@ -35,16 +35,16 @@
   ],
   "icons": [
     {
-      "src": "https://win98icons.alexmeub.com/icons/png/windows_update_large-2.png",
+      "src": "/IMG_20210204_105030.jpg",
       "sizes": "256x256",
-      "type": "image/png"
+      "type": "image/jpg"
     },
     {
-      "src": "https://win98icons.alexmeub.com/icons/png/windows_update_large-2.png",
+      "src": "/IMG_20210204_105030.jpg",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/jpg"
     }
   ],
-  "background_color": "#ffffff",
-  "theme_color": "#ffffff"
+  "background_color": "#000000",
+  "theme_color": "#000000"
 }
