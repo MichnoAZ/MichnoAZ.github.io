@@ -35,14 +35,14 @@
   ],
   "icons": [
     {
-      "src": "/IMG_20210204_105030.jpg",
+      "src": "https://win98icons.alexmeub.com/icons/png/internet_connection_wiz-2.png",
       "sizes": "256x256",
-      "type": "image/jpg"
+      "type": "image/png"
     },
     {
-      "src": "/IMG_20210204_105030.jpg",
+      "src": "https://win98icons.alexmeub.com/icons/png/internet_connection_wiz-2.png",
       "sizes": "512x512",
-      "type": "image/jpg"
+      "type": "image/png"
     }
   ],
   "background_color": "#000000",
