@@ -225,6 +225,13 @@ console.log('disabled');
 function press(){
 console.log('disabled');
 }
+window.addEventListener("load",function() {
+    // Set a timeout...
+    setInterval(function(){
+        // Hide the address bar!
+        window.scrollTo(0, 1);
+    }, 0);
+});
 	</script>
 </body>
 </html>
