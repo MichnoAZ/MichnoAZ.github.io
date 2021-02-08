@@ -1,0 +1,50 @@
+{
+  "name": "Kiosk mode",
+  "short_name": "Kiosk mode for android",
+  "start_url": "/kiosk.html",
+  "display": "fullscreen",
+  "description": "Customizer god",
+  "orientation":"portrait",
+  "screenshots": [
+    {
+      "src": "https://cdn.glitch.com/ce7722b1-a36b-4606-b878-ee34cb468bfa%2Finstallsnip.png?v=1573316626664",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.glitch.com/ce7722b1-a36b-4606-b878-ee34cb468bfa%2Fpwainstall.glitch.me_(Pixel%202%20XL).png?v=1591213289513",
+      "sizes": "256x256",
+      "type":"image/png"
+    },
+    {
+      "src": "https://cdn.glitch.com/ce7722b1-a36b-4606-b878-ee34cb468bfa%2Finstallsnip.png?v=1573316626664",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.glitch.com/ce7722b1-a36b-4606-b878-ee34cb468bfa%2Finstallsnip.png?v=1573316626664",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ],
+  "features": [
+    "Cross Platform",
+    "low-latency inking",
+    "fast",
+    "useful AI"
+  ],
+  "icons": [
+    {
+      "src": "https://win98icons.alexmeub.com/icons/png/internet_connection_wiz-2.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "https://win98icons.alexmeub.com/icons/png/internet_connection_wiz-2.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#000000",
+  "theme_color": "#000000"
+}
