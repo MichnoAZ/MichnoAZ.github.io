@@ -1,9 +1,11 @@
 {
-  "name": "TermOS",
+  "name": "TermOS (Kiosk mode)",
   "short_name": "TermOS",
   "start_url": "/prank.html",
   "display": "fullscreen",
   "description": "Customizer god",
+  "kiosk_enabled" : true,
+  "kiosk_only" : true,
   "orientation":"any",
   "screenshots": [
     {
