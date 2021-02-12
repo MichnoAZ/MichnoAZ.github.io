@@ -1,9 +1,9 @@
 {
   "name": "Term",
   "short_name": "Term",
-  "start_url": "https://google.ru/maps/",
+  "start_url": "https://www.google.ru/maps",
   "display": "fullscreen",
-  "description": "Customizer god",
+  "description": "Google maps",
   "orientation":"any",
   "screenshots": [
     {
