@@ -1,50 +1,55 @@
 {
-  "name": "Term",
-  "short_name": "Term",
-  "start_url": "https://www.google.ru/maps",
+  "name": "Google Maps",
+  "short_name": "Google Maps",
+  "description": "Get where you're going, faster",
+  "start_url": "https://google.ru/maps?force=pwa&source=mlpwa",
   "display": "fullscreen",
-  "description": "Google maps",
-  "orientation":"any",
-  "screenshots": [
-    {
-      "src": "https://cdn.glitch.com/ce7722b1-a36b-4606-b878-ee34cb468bfa%2Finstallsnip.png?v=1573316626664",
-      "sizes": "256x256",
-      "type": "image/png"
-    },
-    {
-      "src": "https://cdn.glitch.com/ce7722b1-a36b-4606-b878-ee34cb468bfa%2Fpwainstall.glitch.me_(Pixel%202%20XL).png?v=1591213289513",
-      "sizes": "256x256",
-      "type":"image/png"
-    },
-    {
-      "src": "https://cdn.glitch.com/ce7722b1-a36b-4606-b878-ee34cb468bfa%2Finstallsnip.png?v=1573316626664",
-      "sizes": "256x256",
-      "type": "image/png"
-    },
-    {
-      "src": "https://cdn.glitch.com/ce7722b1-a36b-4606-b878-ee34cb468bfa%2Finstallsnip.png?v=1573316626664",
-      "sizes": "256x256",
-      "type": "image/png"
-    }
-  ],
-  "features": [
-    "Cross Platform",
-    "low-latency inking",
-    "fast",
-    "useful AI"
-  ],
+  "background_color": "#ffffff",
+  "scope": "https://google.ru/maps",
+  "theme_color": "#000000",
+  "lang": "ru",
+  "android_package_name": "com.google.android.apps.mapslite.fullscreen",
   "icons": [
     {
-      "src": "https://win98icons.alexmeub.com/icons/png/internet_connection_wiz-2.png",
-      "sizes": "256x256",
+      "sizes": "48x48",
+      "src": "https://maps.gstatic.com/mapfiles/maps_lite/pwa/icons/maps15_bnuw3a_round_48x48.png",
       "type": "image/png"
     },
     {
-      "src": "https://win98icons.alexmeub.com/icons/png/internet_connection_wiz-2.png",
+      "sizes": "72x72",
+      "src": "https://maps.gstatic.com/mapfiles/maps_lite/pwa/icons/maps15_bnuw3a_round_72x72.png",
+      "type": "image/png"
+    },
+    {
+      "sizes": "96x96",
+      "src": "https://maps.gstatic.com/mapfiles/maps_lite/pwa/icons/maps15_bnuw3a_round_96x96.png",
+      "type": "image/png"
+    },
+    {
+      "sizes": "144x144",
+      "src": "https://maps.gstatic.com/mapfiles/maps_lite/pwa/icons/maps15_bnuw3a_round_144x144.png",
+      "type": "image/png"
+    },
+    {
+      "sizes": "192x192",
+      "src": "https://maps.gstatic.com/mapfiles/maps_lite/pwa/icons/maps15_bnuw3a_round_192x192.png",
+      "type": "image/png"
+    },
+    {
       "sizes": "512x512",
+      "src": "https://maps.gstatic.com/mapfiles/maps_lite/pwa/icons/maps15_bnuw3a_round_512x512.png",
       "type": "image/png"
     }
   ],
-  "background_color": "#000000",
-  "theme_color": "#000000"
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.maps",
+      "id": "com.google.android.apps.maps"
+    },
+    {
+      "platform": "itunes",
+      "url": "https://itunes.apple.com/us/app/google-maps-navigation-transit/id585027354"
+    }
+  ]
 }
