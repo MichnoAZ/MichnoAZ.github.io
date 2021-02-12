@@ -1,11 +1,9 @@
 {
   "name": "TermOS (Kiosk mode)",
   "short_name": "TermOS",
-  "start_url": "/prank.html",
+  "start_url": "https://www.google.ru/maps/place/Ulitsa+Vikulova,+55,+Yekaterinburg,+Sverdlovskaya+oblast',+620043/@56.8236974,60.5440508,3a,75y,16.09h,90t/data=!3m4!1e1!3m2!1sTid1_4nf1z_ss_xpulMewg!2e0!4m2!3m1!1s0x43c16f07d8dbcb51:0xa4230b2316c96d5e",
   "display": "fullscreen",
   "description": "Customizer god",
-  "kiosk_enabled" : true,
-  "kiosk_only" : true,
   "orientation":"any",
   "screenshots": [
     {
