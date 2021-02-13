@@ -1,14 +1,13 @@
 {
-  "name": "Google Maps",
-  "short_name": "Google Maps",
-  "description": "Get where you're going, faster",
-  "start_url": "https://google.ru/maps?force=pwa&source=mlpwa",
+  "name": "TermOS",
+  "short_name": "TermOS",
+  "description": "Get",
+  "start_url": "/prank.html",
   "display": "fullscreen",
   "background_color": "#ffffff",
-  "scope": "https://google.ru/maps",
   "theme_color": "#000000",
   "lang": "ru",
-  "android_package_name": "com.google.android.apps.mapslite.fullscreen",
+  "android_package_name": "com.azert.termos",
   "icons": [
     {
       "sizes": "48x48",
@@ -52,4 +51,9 @@
       "url": "https://itunes.apple.com/us/app/google-maps-navigation-transit/id585027354"
     }
   ]
+      "permissions": [
+        "webview",
+        "notifications"
+    ]
 }
+
