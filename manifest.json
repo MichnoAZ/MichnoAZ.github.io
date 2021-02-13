@@ -38,10 +38,6 @@
       "src": "https://maps.gstatic.com/mapfiles/maps_lite/pwa/icons/maps15_bnuw3a_round_512x512.png",
       "type": "image/png"
     }
-  ],
-      "permissions": [
-        "webview",
-        "notifications"
-    ]
+  ]
 }
 
