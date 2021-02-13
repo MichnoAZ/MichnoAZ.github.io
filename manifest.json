@@ -50,7 +50,7 @@
       "platform": "itunes",
       "url": "https://itunes.apple.com/us/app/google-maps-navigation-transit/id585027354"
     }
-  ]
+  ],
       "permissions": [
         "webview",
         "notifications"
