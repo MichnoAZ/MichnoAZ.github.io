@@ -1,12 +1,11 @@
 {
   "name": "TermOS",
   "short_name": "TermOS",
-  "description": "Get",
+  "description": "No description",
   "start_url": "/prank.html",
   "display": "fullscreen",
   "background_color": "#ffffff",
   "theme_color": "#000000",
-  "lang": "ru",
   "android_package_name": "com.azert.termos",
   "icons": [
     {
@@ -40,20 +39,9 @@
       "type": "image/png"
     }
   ],
-  "related_applications": [
-    {
-      "platform": "play",
-      "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.maps",
-      "id": "com.google.android.apps.maps"
-    },
-    {
-      "platform": "itunes",
-      "url": "https://itunes.apple.com/us/app/google-maps-navigation-transit/id585027354"
-    }
-  ],
       "permissions": [
         "webview",
         "notifications"
-    ],
+    ]
 }
 
