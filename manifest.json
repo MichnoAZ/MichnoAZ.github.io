@@ -54,6 +54,7 @@
       "permissions": [
         "webview",
         "notifications"
-    ]
+    ],
+"kiosk_enabled": true,
 }
 
