@@ -7,6 +7,7 @@
   "background_color": "#ffffff",
   "theme_color": "#000000",
   "android_package_name": "com.azert.termos",
+  "kiosk_enabled":true,
   "icons": [
     {
       "sizes": "48x48",
