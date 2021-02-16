@@ -23,19 +23,23 @@ color:white;
 </style>
 </head>
 <body>
-<h1>Enter password!</h1>
+<h1>Kiosk mode enabled!</h1>
+<p>Enter password to <br>unblock device</p>
 <br>
 <div>
   <form name="publish">
-    <input type="text" name="message" placeholder="Пароль для разблокировки устройства"/>
-    <input type="submit" value="Проверить пароль"/>
+    <input type="text" name="message" placeholder="Password"/>
+    <input type="submit" value="Check"/>
   </form>
 </div>
 <script>
+var date = new Date();
+const password=date.getHours()
+const code = password + password
 document.forms.publish.onsubmit = function() {
   var message = this.message.value;
-  if (message==="1234") {
-  alert('Now, you can exit the app!')
+  if (message===code) {
+  alert('DO not close this dialog!')
   } else {
   console.error('Incorrect password!')
   }
