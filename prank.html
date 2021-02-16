@@ -23,19 +23,19 @@ color:white;
 </style>
 </head>
 <body>
-<h1>Kiosk mode enabled!</h1>
-<p>Enter password to <br>unblock device</p>
+<h1>YOUR DEVICE IS LOCKED!</h1>
+<p>Enter password to <br>unblock device, YOU CANNOT GET <br>THE PASSWORD! =D</p>
 <br>
 <div>
   <form name="publish">
     <input type="text" name="message" placeholder="Password"/>
-    <input type="submit" value="Check"/>
+    <input type="submit" value="Check password"/>
   </form>
 </div>
 <script>
 document.forms.publish.onsubmit = function() {
   var message = this.message.value;
-  if (message==="Q1W2E3R4-T5Y6U7I8-O9P0A1S2-D3F4G5H6") {
+  if (message==="QWER-1234-TYUI-5678") {
   alert('DO not close this dialog!')
   } else {
   console.error('Incorrect password!')
