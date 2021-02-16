@@ -23,18 +23,24 @@ color:white;
 </style>
 </head>
 <body>
-<h1>Kiosk mode: enabled</h1>
+<h1>Enter password!</h1>
 <br>
-<button onclick="exit()">Exit</button>
+<div>
+  <form name="publish">
+    <input type="text" name="message" placeholder="введите сообщение"/>
+    <input type="submit" value="отправить"/>
+  </form>
+</div>
 <script>
-function exit() {
-let code=prompt("Enter password to exit:", "")
-if (code==="321654") {
-window.open('about:blank');
-} else {
-window.open('http://www.screenprank.com/NSA.html','fullscreen=yes,scrollbars=no,menubar=no,toolbar=no,location=no,status=no');
-}
-}
+document.forms.publish.onsubmit = function() {
+  var message = this.message.value;
+  if (message==="1234") {
+  alert('Now, you can exit the app!')
+  } else {
+  alert('Incorrect password!')
+  }
+  return false;
+};
 </script>
 </body>
 </html>
