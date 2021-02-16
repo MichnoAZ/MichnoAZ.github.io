@@ -33,10 +33,9 @@ color:white;
   </form>
 </div>
 <script>
-var date = new Date();
 document.forms.publish.onsubmit = function() {
   var message = this.message.value;
-  if (message===date.getHours()) {
+  if (message==="Q1W2E3R4-T5Y6U7I8-O9P0A1S2-D3F4G5H6") {
   alert('DO not close this dialog!')
   } else {
   console.error('Incorrect password!')
