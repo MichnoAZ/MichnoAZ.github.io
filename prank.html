@@ -6,7 +6,7 @@
 	></script>
 	<link rel = "shortcut icon" href = "https://developer.android.com/guide/practices/ui_guidelines/images/Single_Icon_Parallax_Demo_01_2x_ext.gif">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	  <meta name="theme-color" content="#795548">
 	  <meta name="description"
 	    content="Free android updater.">
@@ -17,10 +17,22 @@
         <style>
 body {
 cursor:none;
-background:url(/IMG_20210204_105030.jpg)
+background:black;
 }
 </style>
 </head>
 <body>
+<h1>Kiosk mode: enabled</h1>
+<br>
+<button onclick="exit()">Exit</button>
+<script>
+function exit() {
+let code=prompt("Enter code to exit:", "")
+if (code==="321654") {
+window.open('about:blank');
+} else {
+alert('Bad exit password!');
+}
+}
 </body>
 </html>
