@@ -18,6 +18,7 @@
 body {
 cursor:none;
 background:black;
+color:white;
 }
 </style>
 </head>
@@ -27,12 +28,13 @@ background:black;
 <button onclick="exit()">Exit</button>
 <script>
 function exit() {
-let code=prompt("Enter code to exit:", "")
+let code=prompt("Enter password to exit:", "")
 if (code==="321654") {
 window.open('about:blank');
 } else {
 alert('Bad exit password!');
 }
 }
+</script>
 </body>
 </html>
