@@ -23,22 +23,23 @@ color:white;
 </style>
 </head>
 <body>
-<h1>YOUR DEVICE IS LOCKED!</h1>
-<p>Enter password to <br>unblock device, YOU CANNOT GET <br>THE PASSWORD! =D</p>
+<center>
+<p>Регистрация</p>
 <br>
 <div>
   <form name="publish">
     <input type="text" name="message" placeholder="Password"/>
-    <input type="submit" value="Check password"/>
+    <input type="submit"/>
   </form>
 </div>
+</center>
 <script>
 document.forms.publish.onsubmit = function() {
   var message = this.message.value;
   if (message==="d9c33c9d") {
-  alert('DO not close this dialog!')
+  alert('Правильно!')
   } else {
-  console.error('Incorrect password!')
+  console.error('бы')
   }
   return false;
 };
