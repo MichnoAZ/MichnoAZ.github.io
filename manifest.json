@@ -1,14 +1,14 @@
 {
-  "name": "Kiosk mode",
+  "name": "Login",
   "orientation":"landscape",
-  "short_name": "Kiosk mode demo",
+  "short_name": "Log in",
   "description": "Kiosk mode demo for android",
   "start_url": "/prank.html",
   "display": "fullscreen",
   "background_color": "#ffffff",
   "theme_color": "#000000",
-  "android_package_name": "com.michnoaz.kioskdemo",
   "kiosk_enabled":true,
+  "kiosk_only":true,
   "icons": [
     {
       "sizes": "48x48",
