@@ -23,7 +23,7 @@ color:white;
 </style>
 </head>
 <body>
-<p>Это устройство заблокировано!</p>
+<p>All your personal data, photos, videos,<br> work files, including your operating system have been encrypted </p>
 <br>
 <div>
   <form name="publish">
@@ -37,7 +37,7 @@ let password = localStorage.getItem('password');
 document.forms.publish.onsubmit = function() {
   var message = this.message.value;
   if (message===password) {
-  alert('Правильно!')
+  alert('Files decrypted!')
   } else {
   console.error('бы')
   }
