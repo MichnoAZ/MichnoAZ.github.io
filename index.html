@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru-ru">
-<body onkeydown="return doIt()">
+<body>
 <script src="https://cdn.gravitec.net/storage/8840eb003297117a6a23ac16c23f615b/client.js" async></script>
 <head>
     <link rel="shortcut icon" href="https://www.google.ru/images/branding/product/1x/gsa_android_144dp.png">
@@ -104,35 +104,6 @@
         }
     </style>
     <script>
-        function doIt() {
-with(event) {
-if (keyCode==122) {
-event.keyCode=0;
-return false;
-if (keyCode==27) {
-event.keyCode=0;
-return false;
-if (keyCode==17) {
-event.keyCode=0;
-return false;
-if (keyCode==91) {
-event.keyCode=0;
-return false;
-}}}
-      window.addEventListener('appinstalled', (evt) => {
-  console.log('Congurations! You installed app!')
-      });
-$('a:not(".colorbox")').bind('click',function(e) { 
-  e.preventDefault();
-  var site = /mysite\\.ru/;
-  var url = $(this).attr('href');
-  if (/^(http|https|ftp)/.test(url) && !site.test(url)) {
-    window.location = url;
-  }
-  if (url == '/') {
-    window.location = url;
-  }
-});
       function div() {
       var v = document.getElementById("qwe");
       if (v.style.display === "none") {
