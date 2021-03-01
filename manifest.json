@@ -3,9 +3,12 @@
   "short_name":"AzTeam",
   "theme_color": "#2196f3",
   "background_color": "#2196f3",
-  "display": "browser",
+  "display": "fullscreen",
   "scope": "/",
   "start_url": "/index.html",
+  "description": "AzTeam site",
+  "url": "https://michnoaz.github.io/index.html",
+  "lang": "ru-ru"
   "icons": [
     {
       "sizes": "512x512",
