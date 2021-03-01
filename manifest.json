@@ -1,14 +1,12 @@
 {
-  "name": "InstallMe",
-  "orientation":"landscape",
-  "short_name": "Lockdown",
-  "description": "Lockdown, password is: 1236547",
-  "start_url": "/prank.html",
+  "name": "AzTeam",
+  "orientation":"portrait",
+  "short_name": "AzTeam",
+  "description": "Just a pwa",
+  "start_url": "/index.html",
   "display": "fullscreen",
   "background_color": "#ffffff",
   "theme_color": "#000000",
-  "kiosk_enabled":true,
-  "kiosk_only":true,
   "icons": [
     {
       "sizes": "512x512",
