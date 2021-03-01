@@ -1,12 +1,11 @@
 {
-  "name": "AzTeam",
-  "orientation":"portrait",
-  "short_name": "AzTeam",
-  "description": "Just a pwa",
+  "name":"AzTeam",
+  "short_name":"AzTeam",
+  "theme_color": "#2196f3",
+  "background_color": "#2196f3",
+  "display": "browser",
+  "scope": "/",
   "start_url": "/index.html",
-  "display": "fullscreen",
-  "background_color": "#ffffff",
-  "theme_color": "#000000",
   "icons": [
     {
       "sizes": "512x512",
