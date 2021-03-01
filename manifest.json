@@ -19,9 +19,7 @@
     "fast",
     "simple"
   ],
-  "categories": [
-    "utility"
-  ],
+"categories": ["azteam", "read", "omae"],
 "screenshots": [
     {
       "src": "https://michnoaz.github.io/q.png"
