@@ -4,7 +4,7 @@
   "theme_color": "#2196f3",
   "background_color": "#2196f3",
   "display": "fullscreen",
-  "scope": "/",
+  "orientation":"portrait",
   "start_url": "/index.html",
   "description": "AzTeam site",
   "icons": [
@@ -24,13 +24,13 @@
   ],
 "screenshots": [
     {
-      "src": "/q.png"
+      "src": "https://michnoaz.github.io/q.png"
     },
     {
-      "src": "/w.png"
+      "src": "https://michnoaz.github.io//w.png"
     },
     {
-      "src": "/q.png"
+      "src": "https://michnoaz.github.io//q.png"
     }
   ]
 }
