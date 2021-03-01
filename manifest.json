@@ -1,5 +1,6 @@
 {
   "name":"AzTeam",
+  "version":"1.14.5",
   "short_name":"AzTeam",
   "theme_color": "#2196f3",
   "background_color": "#2196f3",
@@ -15,6 +16,14 @@
       "src": "https://win98icons.alexmeub.com/icons/png/key_padlock-0.png",
       "type": "image/png"
     }
+  ]
+"features": [
+    "Cross Platform",
+    "fast",
+    "simple"
+  ],
+  "categories": [
+    "utility"
   ]
 }
 
