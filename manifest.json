@@ -7,7 +7,6 @@
   "scope": "/",
   "start_url": "/index.html",
   "description": "AzTeam site",
-  "lang": "ru-ru",
   "icons": [
     {
       "sizes": "512x512",
@@ -25,10 +24,10 @@
   ],
 "screenshots": [
     {
-      "src": "q.png"
+      "src": "/q.png"
     },
     {
-      "src": "w.png"
+      "src": "/w.png"
     }
   ]
 }
