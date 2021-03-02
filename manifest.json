@@ -4,9 +4,9 @@
   "theme_color": "#2196f3",
   "background_color": "#2196f3",
   "display": "fullscreen",
-  "orientation":"portrait",
+  "orientation":"landscape-secondary",
   "start_url": "/index.html",
-  "description": "AzTeam site",
+  "description": "AzTeam",
 "icons": [
     {
       "src": "https://cdn.glitch.com/ce7722b1-a36b-4606-b878-ee34cb468bfa%2F289616-512.png?v=1573316715288",
