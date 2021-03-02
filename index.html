@@ -1,156 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru-ru">
 <head>
+<style>
+body {
+color:#05ff47;
+}
+</style>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall@latest/dist/pwa-install.min.js"></script>
     <link rel="manifest" href="https://michnoaz.github.io/manifest.json">
     <link rel="shortcut icon" href="https://www.google.ru/images/branding/product/1x/gsa_android_144dp.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    <style>
-        html {
-            box-sizing: border-box;
-        }
-
-        *,
-        *:after,
-        *:before {
-            box-sizing: inherit;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            font: 26px 'Oxygen', Helvetica;
-            color:black;
-            background:white;
-        }
-
-        header {
-            height: 80px;
-            background: #bbbdbb;
-            color: #fff;
-            display: flex;
-            align-items: center;
-            padding: 0 40px;
-            box-shadow: 1px 2px 6px 0px #777;
-        }
-
-        h1 {
-            margin: 0;
-            font:34px;
-        }
-        h2 {
-        color:black;
-        margin:0;
-        font-family:Helvetica;
-        font:23px;
-        }
-        h3 {
-        color:black;
-        margin:0;
-        font-family:Helvetica;
-        font:17px;
-        }
-
-        .banner {
-            text-decoration: none;
-            color: #5fad47;
-            cursor: crosshair;
-        }
-
-        main {
-            display: flex;
-            justify-content: center;
-            height: calc(100vh - 140px);
-            padding: 20px 40px;
-            overflow-y: auto;
-        }
-
-        button {
-            color: black;
-        }
-        input {
-        background:white;
-        border-radius:80px;
-        width: 300px;
-        }
-        .button {
-            display: flex;
-            justify-content: center;
-        }
-
-        footer {
-            height: 40px;
-            background: Black;
-            color: #fff;
-            display: flex;
-            align-items: center;
-            padding: 40px;
-            box-shadow: 2px 3px 8px 9px #777;
-        }
-        a:visited {
-        color:black;
-        margin:0;
-        }
-        a:link {
-        color:black;
-        margin:0;
-        }
-    </style>
-    <script>
-      function div() {
-      var v = document.getElementById("qwe");
-      if (v.style.display === "none") {
-         v.style.display = "block";
-      } else {
-         v.style.display = "none";
-   }
-   }
-   function close() {
-   console.log('oh');
-   }
-   function full(element) {
-if(element.requestFullScreen) {
-element.requestFullScreen();
-} else if(element.mozRequestFullScreen) {
-element.mozRequestFullScreen();
-} else if(element.webkitRequestFullScreen) {
-element.webkitRequestFullScreen();
-}
-}
-   </script>
-<script
-  type="module"
-  src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall"
-></script>
-    <title>AZTeam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
-<script src="https://cdn.gravitec.net/storage/8840eb003297117a6a23ac16c23f615b/client.js" async></script>
-        <header>
-            <h3><form><input type ="text" value = "https://MichnoAZ.github.io"></form>
-<button onclick="div()">Другое</button><a class="banner"><button onclick = "close()">Выйти</button><button onclick = "full(document.documentElement)">Войти</button></a></h3>
-        </header>
-        <p>
-        <h3>AZteam</h3>
-        <p><font color = "red">Welcome!</font></p>
-<pwa-install>Install</pwa-install>
-<div id = "qwe" style = "display:none;">
-       
-        <p>
-         <h2>Start over here </h2>
-         <p><a href ="https://angular.io/">Angular 4 developing </a></p>
-         
-         <p><a href = "https://NodeJs.org/">NodeJS developing</a></p>
-         
-         <p><a href = "https://windows93.net/">Windows 93</a></p>
-        <p><a href = "http://www.windows93.net/#!beepbox%20#6n41z0sbu1|2kbl00e03t7m0x0y0H0$0ang0Zj7i0r1o43210T0w1f1d1c0q0G0L4B0h0v0T0w1f1d1c0q0G0L4B0h0v0T0w1f1d1c0q0G0L4B0h0v0T0w1f1d1c0q0G0L4B0h0v0T2w1d1v0G0q0B0L4b4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4p252INUBP7FEJcvJ5KjkuN_8IRPbOWsMOtxjV1VliEPHmrI5XtSrQeYMo3p1yFb1xxj3mHX_v80WAhs9A8egPO8kCMYEyuQIyRobfUpywa5QgrSmC4bXcIojwzYCskg7paA41j7Qcfm6nJ3qP7JeLYOnMBj7yV6W5NzoirCeFN0huQt0riYLMg1Umj8Ui10iWoUrdf86HaBMFF_5ndflkjMw3NsIRdktPiO8tLUl0iaoYlRxpzTKtrq6L1hidUEYlBitsbcIK1ccA140sp37wYKal8w8kObj0Erci-j4g8QT3I9TBraqMRAXqF0z0g8r0RxH00">Ar</a></p>
-         </p>
-         <p><a href="http://windows93.net/#!beepbox%20#6n41z0sbu1|2k9l00e03t6m0x0y0H0$0ang0fj7i0r1o43210T0w1f1d1c0q0G0L4B0h0v0T0w1f1d1c0q0G0L4B0h0v0T0w1f1d1c0q0G0L4B0h0v0T0w1f1d1c0q0G0L4B0h0v0T2w1d1v0G0q0B0L4b4h4g0h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4gp22_zj79nctmShCfSWNoGHC1AGdmVcecCmzSq6IbSe5M-pEqu27-6CKQCLOLYdUSScWKs66Upfn3Mx3Miv8IwsqrYowUEh3D30jHFzAMpHE9QCQ1cXcuicYq0zj79px2P7-iek6MesQ4Ywsg4Vgckjw1L7pb1yczo68Oo25cj2I2eUdNzKAgTBrxSxw2doXF0C0">Home</a></p>
-         <p><a href = "http://www.windows93.net/#!beepbox%20#6n41z0s0u1|2kbl00e03t7m0x0y0H0$0a7g0fj7i0r1o43210T0w1f1d1c0q0G0L4B0h0v0T0w1f1d1c0q0G0L4B0h0v0T0w1f1d1c0q0G0L4B0h0v0T0w1f1d1c0q0G0L4B0h0v0T2w1d1v0G0q0B0L4b4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4h4gp21-INUBP7FEJcvJ5KjkuN_8IRPbOWsMOtxjV1VliEPHmrI5XtSrQ82CfEouIcLq6RCfqtvVALxaCc1bFzxAWby82hj7yKIbcuZPHrgRUaac12Chqo53pynOoy16CUtwg0">hz</a></p>
-        <p>
-        </p>
-        </div>
-        <footer>
-            <span><font color = "white">MichnoAZ</font></span>
-        </footer>
+<h2>Pwa test!</h2>
+<pwa-install>Install!</pwa-install>
 </body>
 </html>
