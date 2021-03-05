@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<link rel = "manifest" href="/manifest.json">
+</head>
+<div>
+  <form name="publish">
+    <input type="text" name="message" placeholder="введите сообщение"/>
+    <input type="submit" value="Log in"/>
+  </form>
+</div>
+<script>
+document.forms.publish.onsubmit = function() {
+  var message = this.message.value;
+  if (message==="QWER-1234-TYUI-5678") {
+  location.href="https://michnoaz.github.io/os.html"
+  } else {
+  return false;
+  }
+  return false;
+};
+</script>
