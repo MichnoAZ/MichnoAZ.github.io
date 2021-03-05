@@ -7,15 +7,17 @@
   "orientation":"landscape-secondary",
   "start_url": "/index.html",
   "description": "AzTeam",
-"icons": [
+    "screenshots": [
     {
-      "src": "https://cdn.glitch.com/ce7722b1-a36b-4606-b878-ee34cb468bfa%2F289616-512.png?v=1573316715288",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
-    }
-  ],
-"screenshots": [
+      "src": "https://cdn.glitch.com/ce7722b1-a36b-4606-b878-ee34cb468bfa%2Finstallsnip.png?v=1573316626664",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.glitch.com/ce7722b1-a36b-4606-b878-ee34cb468bfa%2Fpwainstall.glitch.me_(Pixel%202%20XL).png?v=1591213289513",
+      "sizes": "256x256",
+      "type":"image/png"
+    },
     {
       "src": "https://cdn.glitch.com/ce7722b1-a36b-4606-b878-ee34cb468bfa%2Finstallsnip.png?v=1573316626664",
       "sizes": "256x256",
@@ -27,10 +29,24 @@
       "type": "image/png"
     }
   ],
-"features": [
+  "features": [
     "Cross Platform",
+    "low-latency inking",
     "fast",
-    "simple"
+    "useful AI"
+  ],
+  "icons": [
+    {
+      "src": "https://cdn.glitch.com/ce7722b1-a36b-4606-b878-ee34cb468bfa%2F289616-256.png?v=1573316684080",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.glitch.com/ce7722b1-a36b-4606-b878-ee34cb468bfa%2F289616-512.png?v=1573316715288",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
   ]
+}
 }
 
