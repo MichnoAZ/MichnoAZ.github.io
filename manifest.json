@@ -1,11 +1,11 @@
 {
-  "name":"AzTeam",
-  "short_name":"AzTeam",
+  "name":"Chrome",
+  "short_name":"Chrome",
   "theme_color": "#ffffff",
   "display": "fullscreen",
   "orientation":"portrait",
   "start_url": "/index.html",
-  "description": "AzTeam",
+  "description": "Secret chrome browser...",
     "screenshots": [
     {
       "src": "https://cdn.glitch.com/ce7722b1-a36b-4606-b878-ee34cb468bfa%2Finstallsnip.png?v=1573316626664",
