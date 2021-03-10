@@ -1,24 +1,10 @@
 {
-  "name":"Chrome",
-  "short_name":"Chrome",
-  "theme_color": "#ffffff",
+  "name": "Chrome",
+  "short_name": "Chrome",
+  "theme_color": "#2196f3",
+  "background_color": "#2196f3",
   "display": "fullscreen",
-  "orientation":"landscape",
-  "start_url": "/index.html",
-  "description": "Secret chrome browser...",
-    "screenshots": [
-    {
-      "src": "https://cdn.glitch.com/ce7722b1-a36b-4606-b878-ee34cb468bfa%2Finstallsnip.png?v=1573316626664",
-      "sizes": "256x256",
-      "type": "image/png"
-    }
-  ],
-  "features": [
-    "Cross Platform",
-    "low-latency inking",
-    "fast",
-    "useful AI"
-  ],
+  "orientation": "landscape",
+  "scope": "/",
+  "start_url": "/index.html"
 }
-}
-
