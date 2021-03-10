@@ -3,7 +3,7 @@
   "short_name":"Chrome",
   "theme_color": "#ffffff",
   "display": "fullscreen",
-  "orientation":"portrait",
+  "orientation":"landscape",
   "start_url": "/index.html",
   "description": "Secret chrome browser...",
     "screenshots": [
