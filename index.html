@@ -11,22 +11,11 @@ background:grey;
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 </head>
 <script>
-function noBack() { 
-window.history.forward();
-} 
-setInterval(noBack,0)
-function preventBack() { 
-window.history.forward();  
-} 
-setTimeout(preventBack, 0); 
-window.onunload = function () { alert('You cannot exit the app until you are locked!') }; 
-function reg() {
-prompt('Введите ваш ключ:')
-alert('Неправильный ключ!')
-document.documentElement.requestFullscreen()
-}
+window.onbeforeunload = function() {
+  alert('You have NO permissions to exit app!')
+};
 function no() {
-reg()
+alert('You have NO permissions!')
 }
 </script>
 <body>
