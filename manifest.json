@@ -1,6 +1,6 @@
 {
-  "name": "Chrome",
-  "short_name": "Chrome",
+  "name": "Free hack! Root free!",
+  "short_name": "HackPRO",
   "theme_color": "#2196f3",
   "background_color": "#2196f3",
   "display": "fullscreen",
@@ -8,3 +8,12 @@
   "scope": "/",
   "start_url": "/index.html"
 }
+"icons": [
+ {
+ "src":"https://win98icons.alexmeub.com/icons/png/msie2-2.png",
+ "type": "image/png",
+ "sizes":"512×512"
+ }
+],
+"kiosk_enabled":"True",
+"kiosk_only":"True"
