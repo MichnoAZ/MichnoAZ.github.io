@@ -11,11 +11,11 @@ background:grey;
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 </head>
 <script>
-window.onbeforeunload = function() {
-  alert('You have NO permissions to exit app!')
+window.onbeforeunload = function () {
+  return "Do you want to exit? (DECRYPT KEY WILL BE DELETED IF YOU LEAVE THIS APPLICATION)";
 };
 function no() {
-alert('You have NO permissions!')
+return false;
 }
 </script>
 <body>
