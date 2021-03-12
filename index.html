@@ -7,8 +7,18 @@
 <link href="https://favicon-generator.org/favicon-generator/htdocs/favicons/2015-01-28/f35bfb33fd2b438e16cf95abb0ce4583.ico" rel="shortcut icon" />
 <style>
 body {
-color:white;
-background:grey;
+color:yellow;
+background:blue;
+}
+#myProgress {
+  width: 100%;
+  background-color: grey;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: green;
 }
 </style>
 <script type="module" src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall@latest/dist/pwa-install.min.js"></script>
@@ -16,19 +26,44 @@ background:grey;
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 </head>
 <script>
+var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 1;
+    var id = setInterval(frame, 1000);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+      }
+    }
+  }
+}
 window.onbeforeunload = function () {
   return "False";
 };
 function no() {
 return false;
 }
+move()
 </script>
 <body>
 <pwa-install>Install this app</pwa-install>
-<div class="trap">
-	<div class="trap__form">
-		<div class="confirm" style="top:-3px;position:fixed;left:50%;width:402px;margin:0 0 0 -221px;background-color:#fbfbfb;border:1px solid #c7c7c7;padding:16px 19px 21px 19px;border-radius:3px;font:11.7px Arial;color:#000;box-shadow:0 3px 3px -2px rgba(0,0,0,0.5)"><div style="float:right;margin:-17px -11px;font-size:18px;color:#808080;cursor:pointer;">×</div><div style="font: 14px Verdana, Arial;text-align:left !important;margin-bottom:4px">Уведомление</div><br><div style="font:10.5px Verdana, Arial;text-align:left !important;margin:-2px 0 1px 0">Одно задание<br>Ахахахахаха поздравляем<br> ------Подробнее: <a href = "https://michnoaz.github.io/prank.html">Здесь</a></div><br><div style="float:right;margin-top:10px"><button style="background-color:#fbfbfb;color:#000;padding:7px 12px 8px 12px;margin:0 3px;font-size:11px;cursor:pointer;border-radius:2px;border: 1px solid #6e80ff;font-weight:700;box-shadow:0 1px 1px -1px rgba(0,0,0,0.7);" onclick = "reg()">Регистрация</button><button style="background-color:#fbfbfb;color:#000;padding:7px 12px 8px 12px;margin:0 3px 0 3px;font-size:11px;cursor:pointer;border-radius:2px;border: 1px solid #bfbfbf;font-weight:200;box-shadow:0 1px 1px -1px rgba(0,0,0,0.7);" onclick="no()">Закрыть</button></div></div>
-	</div>
+<font color = "yellow">
+=============ВНИМАНИЕ=============
+<br>
+Идет установка AndroidRoot,
+<br>
+Не выключайте устройство.
+<br>
+</font>
+<div id="myProgress">
+  <div id="myBar"></div>
 </div>
 </body>
 </html>
