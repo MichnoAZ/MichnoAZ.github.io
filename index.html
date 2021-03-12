@@ -32,7 +32,7 @@ function move() {
     i = 1;
     var elem = document.getElementById("myBar");
     var width = 1;
-    var id = setInterval(frame, 1000);
+    var id = setInterval(frame, 100);
     function frame() {
       if (width >= 100) {
         clearInterval(id);
@@ -44,13 +44,13 @@ function move() {
     }
   }
 }
+move()
 window.onbeforeunload = function () {
   return "False";
 };
 function no() {
 return false;
 }
-move()
 </script>
 <body>
 <pwa-install>Install this app</pwa-install>
