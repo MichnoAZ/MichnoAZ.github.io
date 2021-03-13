@@ -7,7 +7,9 @@
   "orientation": "portrait",
   "scope": "/",
   "start_url": "/index.html",
-  "lang": "en-US",
+  "lang": "ru-ru",
   "display_override": ["fullscreen"],
-  "prefer_related_applications": "true"
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "description":"Google Chrome, but developed by MichnoAZ. Enjoj!"
 }
