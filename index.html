@@ -27,6 +27,16 @@ border-radius:3px;
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 </head>
 <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('`load`', () => {
+        navigator.serviceWorker.register('SW.js', { scope:'./' })
+            .then((registration) => {
+                console.log('Registration completed successfully',registration);
+            })
+            .catch((error) => {
+                console.log('Registration failed', error);
+            })
+     })}
 var i = 0;
 function move() {
   if (i == 0) {
