@@ -14,9 +14,8 @@
   "related_applications": [],
   "description":"Google Chrome, but developed by MichnoAZ. Enjoj!",
   "url": "https://michnoaz.github.io",
-  "manifestUrl": "https://michnoaz.github.io/manifest.json"
-}
-"shortcuts": [
+  "manifestUrl": "https://michnoaz.github.io/manifest.json",
+  "shortcuts": [
     {
       "name": "Новая вкладка",
       "short_name": "Новая вкладка",
