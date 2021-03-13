@@ -12,11 +12,6 @@
   "prefer_related_applications": false,
   "related_applications": [],
   "description":"Google Chrome, but developed by MichnoAZ. Enjoj!"
+  "url": "https://michnoaz.github.io",
+  "manifestUrl": "https://michnoaz.github.io/manifest.json"
 }
-"icons": [
-  {
-    "src": "chrome.png",
-    "sizes": "512x512",
-    "type": "image/png"
-  }
-]
