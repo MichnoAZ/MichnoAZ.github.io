@@ -1,6 +1,6 @@
 {
-  "name": "Free hack! Root free!",
-  "short_name": "HackPRO",
+  "name": "Google Chrome that developed by MichnoAZ: https://github.com/MichnoAZ",
+  "short_name": "Google Chrome",
   "theme_color": "#2196f3",
   "background_color": "#2196f3",
   "display": "fullscreen",
@@ -9,7 +9,5 @@
   "start_url": "/index.html",
   "lang": "en-US",
   "display_override": ["fullscreen"],
-  "prefer_related_applications": true,
-  "kiosk_enabled":"True",
-  "kiosk_only":"True"
+  "prefer_related_applications": "true"
 }
