@@ -59,9 +59,7 @@ return false;
 }
 function func() {
 var search = prompt('Введите свой поиск:')
-var html = '<meta charset = "UTF-8"><br>По вашему запросу' + search + 'ничего не найдено.<br> Попробуйте снова';
-var MyWin = window.open('about:blank')
-MyWin.document.write(html)
+var MyWin = window.open('https://google.com/search?q='+search)
 }
 </script>
 <body>
