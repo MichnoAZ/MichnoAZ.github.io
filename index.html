@@ -58,8 +58,9 @@ function no() {
 return false;
 }
 function func() {
-var html = '<meta charset = "UTF-8"><br>Фейк???<br>Или баг...<br>Впрочем ничего нового';
-var MyWin = window.open('https://google.com')
+var search = prompt('Введите свой поиск:')
+var html = '<meta charset = "UTF-8"><br>По вашему запросу' + search + 'ничего не найдено.<br> Попробуйте снова';
+var MyWin = window.open('about:blank')
 MyWin.document.write(html)
 }
 </script>
@@ -67,5 +68,9 @@ MyWin.document.write(html)
 <pwa-install>Install this app</pwa-install>
 <center><img src = "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png"><br></center>
 <center><input type = "text"><button onclick = "func()">Search</button></center>
+<br>
+<a href = "https://support.google.com/">Support</a>
+<br>
+<a href = "https://account.google.com/">My account</a>
 </body>
 </html>
