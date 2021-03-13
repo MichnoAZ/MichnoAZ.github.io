@@ -1,6 +1,7 @@
 {
   "name": "Google Chrome that developed by MichnoAZ: https://github.com/MichnoAZ",
   "short_name": "Google Chrome",
+  "categories": ["books", "education", "medical"],
   "theme_color": "#2196f3",
   "background_color": "#2196f3",
   "display": "fullscreen",
