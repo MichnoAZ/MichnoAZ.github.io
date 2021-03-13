@@ -11,7 +11,7 @@
   "display_override": ["fullscreen"],
   "prefer_related_applications": false,
   "related_applications": [],
-  "description":"Google Chrome, but developed by MichnoAZ. Enjoj!"
+  "description":"Google Chrome, but developed by MichnoAZ. Enjoj!",
   "url": "https://michnoaz.github.io",
   "manifestUrl": "https://michnoaz.github.io/manifest.json"
 }
