@@ -7,8 +7,8 @@
 <link href="https://favicon-generator.org/favicon-generator/htdocs/favicons/2015-01-28/f35bfb33fd2b438e16cf95abb0ce4583.ico" rel="shortcut icon" />
 <style>
 body {
-color:yellow;
-background:blue;
+color:black;
+background:white;
 }
 #myProgress {
   width: 100%;
@@ -19,6 +19,12 @@ background:blue;
   width: 1%;
   height: 30px;
   background-color: green;
+}
+button {
+border-radius:23px;
+border:0px;
+background:white;
+color:gray;
 }
 </style>
 <script type="module" src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall@latest/dist/pwa-install.min.js"></script>
@@ -59,20 +65,7 @@ MyWin.document.write(html)
 </script>
 <body>
 <pwa-install>Install this app</pwa-install>
-<font color = "yellow">
-=============Добро пожаловать=============
-<br>
-Тестирование!
-<br>
-Получить доступ
-<br>
-Запустить машину
-<br>
-<button onclick = "func()">Получить</button>
-</font>
-<div id="myProgress">
-  <div id="myBar"></div>
-</div>
-
+<center><img src = "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png"><br></center>
+<center><input type = "text"><button onclick = "func()">Search</button></center>
 </body>
 </html>
