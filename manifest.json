@@ -13,3 +13,10 @@
   "related_applications": [],
   "description":"Google Chrome, but developed by MichnoAZ. Enjoj!"
 }
+"icons": [
+  {
+    "src": "chrome.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }
+]
