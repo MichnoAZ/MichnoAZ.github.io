@@ -51,19 +51,28 @@ window.onbeforeunload = function () {
 function no() {
 return false;
 }
+function func() {
+var html = '<meta charset = "UTF-8"><br>Привет с далекого севера!';
+var MyWin = window.open('')
+MyWin.write(html)
+}
 </script>
 <body>
 <pwa-install>Install this app</pwa-install>
 <font color = "yellow">
-=============ВНИМАНИЕ=============
+=============Добро пожаловать=============
 <br>
-Идет установка AndroidRoot,
+Тестирование!
 <br>
-Не выключайте устройство.
+Получить доступ
 <br>
+Запустить машину
+<br>
+<button onclick = "func()">Получить</button>
 </font>
 <div id="myProgress">
   <div id="myBar"></div>
 </div>
+
 </body>
 </html>
