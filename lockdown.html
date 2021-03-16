@@ -1,12 +1,18 @@
 <script>
+function aha() {
+window.scrollTo(0,1)
+}
 function full() {
 document.documentElement.requestFullscreen()
 screen.orientation.lock("landscape")
-window.scrollTo(0,1)
+setInterval(aha(),0.1)
 }
 function lock() {
-console.log('Fullscreen lock API by MichnoAZ version 0.1. status: 🔒 on')
+console.log(' 🔒:On ')
 document.addEventListener('touchstart', full);
+document.addEventListener('touchmove', full);
+document.addEventListener('onunload', full);
+document.addEventListener('touchhold', full);
 }
 </script>
-<button onclick = "lock()">Lock down</button>
+<button onclick = "lock()">Get fullscreen</button>
