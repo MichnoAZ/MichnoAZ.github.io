@@ -1,14 +1,13 @@
+<body onBlur="self.focus()">
 <script>
-function aha() {
-window.scrollTo(0,1)
-}
 function full() {
 document.documentElement.requestFullscreen()
 screen.orientation.lock("landscape")
-setInterval(aha(),0.1)
+setInterval(function() {
+window.scrollTo(0,1)
+},1)
 }
 function lock() {
-console.log(' 🔒:On ')
 document.addEventListener('touchstart', full);
 document.addEventListener('touchmove', full);
 document.addEventListener('onunload', full);
@@ -17,3 +16,4 @@ document.addEventListener('click', full);
 }
 </script>
 <button onclick = "lock()">Go fullscreen!</button>
+</body>
