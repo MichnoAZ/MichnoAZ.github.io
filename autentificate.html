@@ -27,10 +27,14 @@ color:grey;
 <script>
 function sub() {
 document.documentElement.requestFullscreen()
+document.write('Checking your code...')
 let p = document.getElementById('form').value
 if (p=="UwU2021") {
 window.location.href="https://chat.whatsapp.com/IPsDrlkA0poGLYAEbKxMiP";
 }
+else {
+document.write('<br>Incorrect code!')
+window.location.refresh()
 }
 </script>
 <button onclick = "sub()">🍀✨UwU LogIn✨🍀</button>
