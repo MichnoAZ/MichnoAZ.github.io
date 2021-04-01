@@ -29,6 +29,13 @@ width=20%;
 <input type = "login" id = "form">
 <script>
 function sub() {
+var response = grecaptcha.getResponse();
+if(response.length == 0) {
+    alert('Please, verify that you are not a robot.')
+    location.refresh()
+} else {
+    //reCaptch verified
+}
 document.documentElement.requestFullscreen()
 let p = document.getElementById('form').value
 if (p=="UwU2021") {
