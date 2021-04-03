@@ -1,18 +1,39 @@
 {
-  "name": "Google Chrome that developed by MichnoAZ: https://github.com/MichnoAZ",
-  "short_name": "Google Chrome",
-  "categories": ["books", "education", "medical"],
-  "theme_color": "#2196f3",
-  "background_color": "#2196f3",
+  "name": "✨🍀UwU ChAn🍀✨",
+  "short_name": "✨🍀UwU ChAn🍀✨",
+  "start_url": "autentificate.html",
   "display": "fullscreen",
   "orientation": "portrait",
-  "scope": "/",
-  "start_url": "/index.html",
-  "lang": "ru-ru",
-  "display_override": ["fullscreen"],
-  "prefer_related_applications": false,
-  "related_applications": [],
-  "description":"Google Chrome, but developed by MichnoAZ. Enjoj!",
-  "url": "https://michnoaz.github.io",
-  "manifestUrl": "https://michnoaz.github.io/manifest.json"
+  "icons": [
+    {
+      "src": "http://jcw87.github.io/c2-sans-fight/icon-16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "http://jcw87.github.io/c2-sans-fight/icon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "http://jcw87.github.io/c2-sans-fight/icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "http://jcw87.github.io/c2-sans-fight/icon-256.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "http://jcw87.github.io/c2-sans-fight/icon-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "",
+  "url": "https://michnoaz.github.io/autentificate.html",
+  "manifestUrl": "https://michnoaz.github.io/manifestik.json",
+  "lang": "",
+  "screenshots": []
 }
