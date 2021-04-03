@@ -65,7 +65,17 @@ color:#ffffff;
       src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwa-inking@1.0.3"
     ></script>
 <script>
+  let inconfig = 0;
+window.addEventListener('appinstalled', (evt) => {
+  console.log('a2hs installed');
+  let inconfig = 1;
+});
 function sub() {
+if (inconfig==0) {
+alert('Please, install our PWA, \n click "Install this app"')
+} else {
+//nothing ,thanks for installing =)
+}
 var response = grecaptcha.getResponse();
 if(response.length == 0) {
     alert('Please, verify that you are not a robot.')
