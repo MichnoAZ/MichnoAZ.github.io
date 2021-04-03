@@ -85,8 +85,13 @@ Its a secret forum with chat, <br>where you can write ideas, and more:)<br>
 			var ss = document.getElementsByTagName('script')[0]; 
 			ss.parentNode.insertBefore(script, ss);
 		})();
+        function gopaint() {
+let inkcanv = document.getElementById('inkc')
+     inkcanv.requestFullscreen()
+}
 	</script>
-<inking-canvas name="myInkingCanvas">
+<inking-canvas name="myInkingCanvas" id = "inkc">
         <inking-toolbar canvas="myInkingCanvas"></inking-toolbar>
     </inking-canvas>
+<button onclick = "gopaint()">Go paint!</button>
 </html>
