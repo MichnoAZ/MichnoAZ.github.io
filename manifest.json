@@ -2,16 +2,17 @@
   "name": "✨🍀UwU ChAn🍀✨",
   "short_name": "✨🍀UwU ChAn🍀✨",
   "start_url": "autentificate.html",
+  "scope":"/",
   "display": "fullscreen",
   "orientation": "portrait",
-"description": "Just a UwU ChAn PWA",
-"features": [
+  "description": "Just a UwU ChAn PWA",
+  "features": [
     "Cross Platform",
     "low-latency inking",
     "fast",
     "useful AI"
   ],
-"theme_color": "#1976d2",
+  "theme_color": "#1976d2",
   "icons": [
     {
       "src": "https://jcw87.github.io/c2-sans-fight/icon-16.png",
@@ -42,5 +43,5 @@
   "background_color": "#579137",
   "url": "https://michnoaz.github.io/autentificate.html",
   "manifestUrl": "https://michnoaz.github.io/manifestik.json",
-  "lang": "en-ru"
+  "lang": "en-us"
 }
