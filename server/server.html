@@ -1,13 +1,15 @@
 <script>
 function check(h) {
-if (h == "UwU2021") {
-       window.location.href="site.html";
-   }
+if (h == "password=UwU2021|name=2021") {
+       window.location.href="";
+   } else {
+   document.write('Incorrect data!')
+  }
 }
 if(window.location.hash) {
       var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
       check(hash)
   } else {
-      document.write('Enter password!')
+      document.write('ALERT:Data not found!<br>')
   }
 </script>
