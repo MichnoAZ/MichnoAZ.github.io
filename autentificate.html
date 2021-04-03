@@ -1,4 +1,16 @@
+<!DOCTYPE html>
 <html>
+<head>
+<title>Someone knows-Someone will be ksacked</title>
+<meta name="theme-color" content="#317EFB"/>
+<link rel = "manifest" href = "/manifest.json">
+<script type="module" src = "pwabuilder-sw-register.js"></script>
+<script
+  type="module"
+  src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall"
+></script>
+</head>
+<body>
 <style>
 html {
 background:url(https://i.pinimg.com/originals/e2/ac/23/e2ac2389b2b85c65dc022483af2ec686.jpg);
@@ -27,13 +39,6 @@ a:visited {
 color:#ffffff;
 }
 </style>
-<meta name="theme-color" content="#317EFB"/>
-<link rel = "manifest" href = "/manifest.json">
-<script type="module" src = "pwabuilder-sw-register.js"></script>
-<script
-  type="module"
-  src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall"
-></script>
   <pwa-install>Install</pwa-install>
 <link rel = "stylesheet" href = "https://www.gstatic.com/recaptcha/releases/5mNs27FP3uLBP3KBPib88r1g/demo__ltr.css">
 <h1>✨🍀UwU ChAn autintificate🍀✨</h1>
@@ -55,6 +60,8 @@ document.documentElement.requestFullscreen()
 let p = document.getElementById('form').value
 if (p=="UwU2021") {
 document.write('<iframe width="100%" height="100%" src = "https://uwuchan.blogspot.com/" allowfullscreen></iframe>');
+} else {
+alert('Incorrect password! Try again \n or write me on telegram: \n @MichnoAZ')
 }
 }
 </script>
@@ -94,4 +101,5 @@ let inkcanv = document.getElementById('inkc')
         <inking-toolbar canvas="myInkingCanvas"></inking-toolbar>
     </inking-canvas>
 <button onclick = "gopaint()">Go paint!</button>
+</body>
 </html>
