@@ -62,12 +62,6 @@ color:#ffffff;
     ></script>
 <script>
 function sub() {
-let argme = getInstalledStatus()
-if (argme==false) {
-openPrompt()
-} else if (argme==true) {
-alert('Welcome to app!')
-}
 var response = grecaptcha.getResponse();
 if(response.length == 0) {
     alert('Please, verify that you are not a robot.')
