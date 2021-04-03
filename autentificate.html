@@ -104,6 +104,9 @@ Its a secret forum with chat, <br>where you can write ideas, and more:)<br>
 let inkcanv = document.getElementById('inkc')
      inkcanv.requestFullscreen()
 }
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('SW.js');
+};
 	</script>
 <inking-canvas name="myInkingCanvas" id = "inkc">
         <inking-toolbar canvas="myInkingCanvas"></inking-toolbar>
