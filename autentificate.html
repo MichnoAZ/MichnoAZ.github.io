@@ -56,8 +56,18 @@ color:#ffffff;
 ✨🍀Password✨🍀<br>
 <input type = "login" id = "form" placeholder="Your special code">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwa-inking@1.0.3"
+    ></script>
 <script>
 function sub() {
+let argme = getInstalledStatus()
+if (argme==false) {
+openPrompt()
+} else if (argme==true) {
+alert('Welcome to app!')
+}
 var response = grecaptcha.getResponse();
 if(response.length == 0) {
     alert('Please, verify that you are not a robot.')
@@ -73,10 +83,6 @@ alert('Incorrect password! Try again \n or write me on telegram: \n @MichnoAZ')
 }
 }
 </script>
-<script
-      type="module"
-      src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwa-inking@1.0.3"
-    ></script>
 <script src='https://www.google.com/recaptcha/api.js'></script>
 <div class="g-recaptcha" data-sitekey="6LcmmJcaAAAAAJK1grGijqmw737UGg-2n-O-EeVR"></div>
 <button onclick = "sub()">🍀✨LogIn✨🍀</button>
