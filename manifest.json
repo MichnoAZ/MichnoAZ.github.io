@@ -4,6 +4,14 @@
   "start_url": "autentificate.html",
   "display": "fullscreen",
   "orientation": "portrait",
+"description": "Just a UwU ChAn PWA",
+"features": [
+    "Cross Platform",
+    "low-latency inking",
+    "fast",
+    "useful AI"
+  ],
+"theme_color": "#1976d2",
   "icons": [
     {
       "src": "https://jcw87.github.io/c2-sans-fight/icon-16.png",
