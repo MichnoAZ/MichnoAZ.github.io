@@ -49,6 +49,8 @@ button {
   background-size: 200% auto;
   box-shadow: 0 0 20px rgba(0, 0, 0, .1);
   transition: .5s;
+  width:15%;
+  height:10%%
 }
 button:hover {
   background-position: right center;
@@ -84,11 +86,6 @@ window.addEventListener('appinstalled', (evt) => {
   let inconfig = 1;
 });
 function sub() {
-if (inconfig==0) {
-alert('Please, install our PWA, \n click "Install this app"')
-} else {
-//nothing ,thanks for installing =)
-}
 var response = grecaptcha.getResponse();
 if(response.length == 0) {
     alert('Please, verify that you are not a robot.')
@@ -100,7 +97,7 @@ let p = document.getElementById('form').value
 if (p=="UwU2021") {
 document.write(`<iframe width="100%" height="100%" src = "https://uwuchan.blogspot.com/" allowfullscreen></iframe><script>window.addEventListener('click', (evt) => {console.log(evt);document.documentElement.requestFullscreen();});`);
 } else {
-alert('Incorrect password! Try again \n or write me on telegram: \n @MichnoAZ')
+alert('Incorrect password! Try again \n or write me on telegram: \n @MichnoAZ \n Or buy proxy: d0nfree.github.io/load')
 }
 }
 </script>
