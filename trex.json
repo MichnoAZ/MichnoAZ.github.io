@@ -1,0 +1,47 @@
+{
+  "name": "Trex",
+  "short_name": "Trex",
+  "start_url": "trex.html",
+  "scope":"/",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "description": "Just a trex",
+  "features": [
+    "Cross Platform",
+    "low-latency inking",
+    "fast",
+    "useful AI"
+  ],
+  "theme_color": "#1976d2",
+  "icons": [
+    {
+      "src": "https://jcw87.github.io/c2-sans-fight/icon-16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "https://jcw87.github.io/c2-sans-fight/icon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "https://jcw87.github.io/c2-sans-fight/icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "https://jcw87.github.io/c2-sans-fight/icon-256.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "https://jcw87.github.io/c2-sans-fight/icon-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#579137",
+  "url": "https://michnoaz.github.io/trex.html",
+  "manifestUrl": "https://michnoaz.github.io/trex.json",
+  "lang": "en-us"
+}
