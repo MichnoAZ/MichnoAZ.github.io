@@ -1,7 +1,7 @@
 {
   "name": "✨🍀UwU ChAn🍀✨",
-  "short_name": "✨🍀UwU ChAn🍀✨",
-  "start_url": "autentificate.html",
+  "short_name": "MichnoAZ",
+  "start_url": "index.html",
   "scope":"/",
   "display": "fullscreen",
   "orientation": "portrait",
@@ -41,7 +41,7 @@
     }
   ],
   "background_color": "#579137",
-  "url": "https://michnoaz.github.io/autentificate.html",
+  "url": "https://michnoaz.github.io/index.html",
   "manifestUrl": "https://michnoaz.github.io/manifestik.json",
   "lang": "en-us"
 }
