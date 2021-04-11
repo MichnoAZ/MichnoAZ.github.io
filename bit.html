@@ -1,0 +1,66 @@
+<script>
+function en() {
+document.documentElement.requestFullscreen();
+}
+</script>
+<style>
+  @-webkit-keyframes argh-my-eyes {
+        0%   { background-color: green; }
+    49% { background-color: blue; }
+    70% { background-color: red; }
+   80% { background-color: black; }
+
+  }
+  @-moz-keyframes argh-my-eyes {
+     0%   { background-color: green; }
+    49% { background-color: blue; }
+    70% { background-color: red; }
+  80% { background-color: black; }
+
+  }
+  @keyframes argh-my-eyes {
+    0%   { background-color: green; }
+    49% { background-color: blue; }
+    70% { background-color: red; }
+  80% { background-color: black; }
+
+  }
+  @keyframes hi {
+    0%   { background-color: green; }
+    100% { background-color: red; }
+
+  }
+  @-moz-keyframes hi {
+    0%   { background-color: green; }
+    100% { background-color: red; }
+
+  }
+  @-webkit-keyframes hi {
+    0%   { background-color: green; }
+    100% { background-color: red; }
+
+  }
+  body {
+  -webkit-animation: argh-my-eyes 10s infinite;
+  -moz-animation:    argh-my-eyes 10s infinite;
+  animation:         argh-my-eyes 10s infinite;
+width:5px;
+height:5px;
+}
+button {
+  -webkit-animation: argh-my-eyes 5s infinite;
+  -moz-animation:    argh-my-eyes 5s infinite;
+  animation:         argh-my-eyes 5s infinite;
+}
+button:hover {
+  -webkit-animation: hi 5s;
+  -moz-animation:    hi 5s;
+  animation:         hi 5s;
+  -webkit-animation: argh-my-eyes 5s infinite;
+  -moz-animation:    argh-my-eyes 5s infinite;
+  animation:         argh-my-eyes 5s infinite;
+}
+</style>
+<body>
+</body>
+<button onclick = "en()">Start</button>
