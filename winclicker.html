@@ -16,6 +16,7 @@ background-color:white;
 <script>
     var clicks = 0;
     var num = 1;
+var aud = new Audio("tada.mp3");
     function clicked() {
         var audio = new Audio("button.mp3");
         audio.play();
@@ -24,34 +25,42 @@ background-color:white;
         switch(clicks) {
         case 100:
         alert('Поздравляем! Вы получили новое достижение!: Новичок !');
+        aud.play();
         num = num + 1;
         break;
         case 200:
        alert('Поздравляем! Вы получили новое достижение!: Спам-мастер !');
+       aud.play();
         num = num + 2;
         break;
         case 300:
         alert('Поздравляем! Вы получили новое достижение!: Мастер !');
+        aud.play();
         num = num + 3;
         break;
         case 400:
         alert('Поздравляем! Вы получили новое достижение!: Профиссионал !');
+        aud.play();
         num = num + 4;
         break;
         case 500:
         alert('Поздравляем! Вы получили новое достижение!: Игрок !');
+        aud.play();
         num = num + 5;
         break;
         case 600:
         alert('Поздравляем! Вы получили новое достижение!: Омега 1000! !');
+        aud.play();
         num = num + 7;
         break;
         case 700:
         alert('Поздравляем! Вы получили новое достижение!: Омега 2000! !');
+        aud.play();
         num = num + 9;
         break;
         case 800:
         alert('Поздравляем! Вы получили новое достижение!: Омега 3000! !');
+        aud.play();
         num = num + 10;
         break;
         }
@@ -64,10 +73,12 @@ function bc(nc,money) {
     } else {
     num = num + nc;
     clicks = clicks - money;
+    aud.play();
     }
 }
 function premium(lucky) {
     num = clicks - num * 8 + lucky;
+    aud.play();
 }
 </script>
 <center><button onclick = "clicked()"><img src = "https://win98icons.alexmeub.com/icons/png/windows_update_large-5.png"></button>
