@@ -1,6 +1,7 @@
 <style>
 body {
    background:url(https://win98icons.alexmeub.com/icons/png/windows_update_large-5.png);
+   color:white;
 }
 </style>
 <body>
@@ -10,6 +11,7 @@ body {
     function clicked() {
         clicks += 1;
         document.getElementById("clicker").innerHTML = clicks;
+        document.documentElement.requestFullscreen();
     };
 </script>
 <script src="https://yandex.ru/games/sdk/v2"></script>
@@ -20,7 +22,7 @@ body {
         .init({
             adv: {
                 onAdvClose: wasShown => {
-                      console.info('adv closed!');
+                      console.log('adv closed!');
                 }
             }
         })
