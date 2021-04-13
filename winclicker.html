@@ -12,11 +12,35 @@ background-color:white;
 </style>
 <body>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset = "utf-8">
 <script>
     var clicks = 0;
+    var num = 1;
     function clicked() {
-        clicks += 1;
+        clicks = clicks + num;
         document.getElementById("clicker").innerHTML = "Your cash is: " + clicks + " $";
+        switch(clicks) {
+        case 100:
+        alert('Поздравляем! Вы получили новое достижение!: Новичок !');
+        num = num + 1;
+        break;
+        case 200:
+       alert('Поздравляем! Вы получили новое достижение!: Спам-мастер !');
+        num = num + 2;
+        break;
+        case 300:
+        alert('Поздравляем! Вы получили новое достижение!: Мастер !');
+        num = num + 3;
+        break;
+        case 400:
+        alert('Поздравляем! Вы получили новое достижение!: Профиссионал !');
+        num = num + 4;
+        break;
+        case 500:
+        alert('Поздравляем! Вы получили новое достижение!: Игрок !');
+        num = num + 5;
+        break;
+        };
         document.documentElement.requestFullscreen();
     };
 </script>
