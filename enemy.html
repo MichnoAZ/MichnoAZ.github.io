@@ -1,0 +1,47 @@
+<style>
+#myProgress {
+  width: 100%;
+  background-color: grey;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: green;
+}
+button {
+background-color:white;
+}
+</style>
+<script>
+var i = 0;
+function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+      }
+    }
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 10000;
+  }
+}
+move()
+function kill() {
+width = width - 15;
+if (width == 0) {
+alert('Босс побежден!');
+}
+}
+</script>
+<meta charset = "utf-8">
+<meta name = "viewport" content = "width=device-width, initial-scale=1">
+<div id="myProgress">
+  <div id="myBar"></div>
+</div><br>
+<button onclick = "kill()">Ударить</button>
