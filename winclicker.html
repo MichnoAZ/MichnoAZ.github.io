@@ -1,7 +1,13 @@
 <style>
 body {
-   background:url(https://win98icons.alexmeub.com/icons/png/windows_update_large-5.png);
+   background:url(https://i.pinimg.com/originals/6f/5f/54/6f5f540ae4d6923c58adb746cb77a664.jpg);
    color:white;
+   font-size:12px;
+   font-family:Arial;
+}
+button {
+color:white;
+background-color:white;
 }
 </style>
 <body>
@@ -14,21 +20,6 @@ body {
         document.documentElement.requestFullscreen();
     };
 </script>
-<script src="https://yandex.ru/games/sdk/v2"></script>
 <center><button onclick = "clicked()"><img src = "https://win98icons.alexmeub.com/icons/png/windows_update_large-5.png"></button>
 <br><div id = "clicker">Click the windows!</div></center>
-<script>
-    YaGames
-        .init({
-            adv: {
-                onAdvClose: wasShown => {
-                      console.log('adv closed!');
-                }
-            }
-        })
-        .then(ysdk => {
-            var fullscreenControl = new ymaps.control.FullscreenControl();
-            fullscreenControl.enterFullscreen();
-        });
-</script>
 </body>
