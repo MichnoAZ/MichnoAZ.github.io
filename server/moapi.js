@@ -1,19 +1,4 @@
-function tag(tagName,fn){
-  document.createElement(tagName);
-  //find all the tags occurrences (instances) in the document
-  var tagInstances = document.getElementsByTagName(tagName);
-    //for each occurrence run the associated function
-        for ( var i = 0; i < tagInstances.length; i++) {
-            fn(tagInstances[i]);
-        }
-}
-function app() {
-bm.requestFullscreen();
-window.scrollTo(0,1);
-}
-function mopt() {
-var bm = document.getElementsByTagName('mobile');
-bm.addEventListener('click',app)
-bm.addEventListener('touchstart',app)
-}
-tag('mobile',mopt);
+var text;
+document.write(`<meta name = "viewport" content = "width=device-width,initial-scale=1">`);
+document.write(`<header><div id = "hi" style = "width:100%; background-color:green; color:white; height:90px; position:fixed; top:0;">Mobile app</div></header><br>`);
+document.write(`<div id = "content" style = "background-color:#c9c9c9;color:black;font-family:Arial;height:100%;">` + text + `</div>`);
