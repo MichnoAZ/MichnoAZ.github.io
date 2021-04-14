@@ -3,22 +3,7 @@
     <script src = "https://MichnoAZ.github.io/server/moapi.js"></script>
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <title>Hello, AMPs</title>
-    <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
-    <meta name="viewport" content="width=device-width">
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "Hello",
-        "headline": "Open-source framework for publishing content",
-        "datePublished": "2015-10-07T12:02:41Z",
-        "image": [
-          "logo.jpg"
-        ]
-      }
-    </script>
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-  </head>
+     <meta name="viewport" content="width=device-width">
   <style>
 body {
    background-color:white;
@@ -114,5 +99,22 @@ function premium(lucky) {
 <button onclick = "bc(12,150)">+12 кликов за 150 кэшов $</button><br>
 <button onclick = "bc(30,500)">+30 кликов за 500 кэшов $</button><br>
 <button onclick = "bc(75,800)"><font color = "yellow">ЛУЧШЕЕ ПРЕДЛОЖЕНИЕ!! + 75 кликов за 800 кэшов $!!!</font></button><br>
+<script src="https://yandex.ru/games/sdk/v2"></script>
+<script>
+    YaGames
+        .init({
+          screen: {
+          fullscreen:True
+          }
+            adv: {
+                onAdvClose: wasShown => {
+                      console.info('adv closed!');
+                }
+            }
+        })
+        .then(ysdk => {
+            // ...
+        });
+</script>
 </body>
 </html>
