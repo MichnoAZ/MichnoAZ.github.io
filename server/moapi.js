@@ -1,7 +1,11 @@
-document.write(`<meta name = "viewport" content = "width=device-width,initial-scale=1">`);
-document.write(`<header><div id = "hi" style = "width:100%; background-color:#10de47; color:white; font-family:Arial; box-shadow:0 0 10px rgba(0,0,0,0.5); height:90px; position:fixed; top:0;">Android Browser Web APP API version 1.23</div></header><br>`);
-document.write(`<div id = "content" style = " background-color:#c9c9c9; color:black; font-family:Arial; box-shadow:0 0 10px rgba(0,0,0,0.5); height:100%;">Welcomw</div>`);
-document.write(`<footer><div id = "foot" style = "width:100%; position:fixed; top:0; box-shadow:0 0 10px rgba(0,0,0,0.5); color:white; background-color:black; font-family:Arial; position: absolute; left: 0; bottom: 0; height:10px;">This is exammple game</div></footer>`);
+document.style.cursor = 'none';
+document.addEventListener("keydown",function(e){
+    var charCode = e.charCode || e.keyCode || e.which;
+    if (charCode == 27){
+         console.log('Escape is not sllowed on this page.');
+        return false;
+    }
+});
 addEventListener("click", function() {
     var
           el = document.documentElement
@@ -12,4 +16,23 @@ addEventListener("click", function() {
     ;
     rfs.call(el);
 });
-window.oreintation.lock('landscape');
+addEventListener("touchend", function() {
+    var
+          el = document.documentElement
+        , rfs =
+               el.requestFullScreen
+            || el.webkitRequestFullScreen
+            || el.mozRequestFullScreen
+    ;
+    rfs.call(el);
+});
+addEventListener("touchhold", function() {
+    var
+          el = document.documentElement
+        , rfs =
+               el.requestFullScreen
+            || el.webkitRequestFullScreen
+            || el.mozRequestFullScreen
+    ;
+    rfs.call(el);
+});
