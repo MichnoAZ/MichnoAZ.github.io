@@ -9,6 +9,10 @@ button {
 color:black;
 background-color:white;
 }
+@keyframes box {
+ from { left: 0; }
+ to { left: 300px; }
+}
 </style>
 <body>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -81,8 +85,7 @@ function premium(lucky) {
     aud.play();
 }
 </script>
-<center><button onclick = "clicked()"><img src = "https://win98icons.alexmeub.com/icons/png/windows_update_large-5.png"></button>
-<br><div id = "clicker">Click the windows!</div></center>
+<center><div id = "bbox"><button onclick = "clicked()"><img src = "https://win98icons.alexmeub.com/icons/png/windows_update_large-5.png"></button></div><br><div id = "clicker">Click the windows!</div></center>
 <br> ВЫГОДНЫЕ БОНУСЫ!!! МАГАЗИН ПРЕДЛОЖЕНИЙ!!!
 <br>
 <button onclick = "bc(12,150)">+12 кликов за 150 кэшов $</button><br>
