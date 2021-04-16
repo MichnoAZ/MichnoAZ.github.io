@@ -24,12 +24,10 @@ background-color:white;
     var clicks = 0;
     var num = 1;
 var aud = new Audio("tada.mp3");
-        localStorage['clck'] = clicks;
-        var cat = localStorage.getItem('clck');
     function clicked() {
         var audio = new Audio("button.mp3");
         audio.play();
-        cat = clicks + num;
+        clicks = clicks + num;
 
         document.getElementById("clicker").innerHTML = "Ваши клики вот: " + clicks + " столько.";
     };
