@@ -16,6 +16,7 @@ color:black;
 background-color:white;
 }
 </style>
+<script src="https://yandex.ru/games/sdk/v2"></script>
 <body>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset = "utf-8">
@@ -23,58 +24,18 @@ background-color:white;
     var clicks = 0;
     var num = 1;
 var aud = new Audio("tada.mp3");
+        localStorage['clck'] = clicks;
+        var cat = localStorage.getItem('clck');
     function clicked() {
         var audio = new Audio("button.mp3");
         audio.play();
-        clicks = clicks + num;
-        document.getElementById("clicker").innerHTML = "Your cash is: " + clicks + " $";
-        switch(clicks) {
-        case 100:
-        alert('Поздравляем! Вы получили новое достижение!: Новичок !');
-        aud.play();
-        num = num + 1;
-        break;
-        case 200:
-       alert('Поздравляем! Вы получили новое достижение!: Спам-мастер !');
-       aud.play();
-        num = num + 2;
-        break;
-        case 300:
-        alert('Поздравляем! Вы получили новое достижение!: Мастер !');
-        aud.play();
-        num = num + 3;
-        break;
-        case 400:
-        alert('Поздравляем! Вы получили новое достижение!: Профиссионал !');
-        aud.play();
-        num = num + 4;
-        break;
-        case 500:
-        alert('Поздравляем! Вы получили новое достижение!: Игрок !');
-        aud.play();
-        num = num + 5;
-        break;
-        case 600:
-        alert('Поздравляем! Вы получили новое достижение!: Омега 1000! !');
-        aud.play();
-        num = num + 7;
-        break;
-        case 700:
-        alert('Поздравляем! Вы получили новое достижение!: Омега 2000! !');
-        aud.play();
-        num = num + 9;
-        break;
-        case 800:
-        alert('Поздравляем! Вы получили новое достижение!: Омега 3000! !');
-        aud.play();
-        num = num + 10;
-        break;
-        }
-        document.documentElement.requestFullscreen();
+        cat = clicks + num;
+
+        document.getElementById("clicker").innerHTML = "Ваши клики вот: " + clicks + " столько.";
     };
 function bc(nc,money) {
     if (clicks < money) {
-    alert('У вас не хватает денег! Вот-такс!');
+    alert('У вас не хватает кликов!');
     return false;
     } else {
     num = num + nc;
@@ -83,27 +44,42 @@ function bc(nc,money) {
     }
 }
 function premium(lucky) {
-    num = clicks - num * 8 + lucky;
+    num = clicks - num * 80 + lucky;
     aud.play();
+}
+function adv(as) {
+ysdk.adv.showRewardedVideo({
+    callbacks: {
+        onOpen: () => {
+            console.log('Video ad open.');
+        },
+        onRewarded: () => {
+            console.log('Rewarded!');
+            num = num + as;
+        },
+        onClose: () => {
+            console.log('Video ad closed.');
+        }, 
+        onError: (e) => {
+            console.log('Error while open video ad:', e);
+        }
+    }
+})
 }
 </script>
 <center><div id = "bbox"><button onclick = "clicked()"><img src = "https://win98icons.alexmeub.com/icons/png/windows_update_large-5.png"></button></div><br><div id = "clicker">Click the windows!</div></center>
-<br> ВЫГОДНЫЕ БОНУСЫ!!! МАГАЗИН ПРЕДЛОЖЕНИЙ!!!
+<br> Выгода тут --->
 <br>
-<button onclick = "bc(12,150)">+12 кликов за 150 кэшов $</button><br>
-<button onclick = "bc(30,500)">+30 кликов за 500 кэшов $</button><br>
-<button onclick = "bc(75,800)"><font color = "yellow">ЛУЧШЕЕ ПРЕДЛОЖЕНИЕ!! + 75 кликов за 800 кэшов $!!!</font></button><br>
-<script src="https://yandex.ru/games/sdk/v2"></script>
+<button onclick = "bc(12,150)">+12 кликов за 150 кликов $</button><br>
+<button onclick = "bc(30,500)">+30 кликов за 500 кликов $</button><br>
+<button onclick = "bc(75,800)"><font color = "yellow"> это выгода! + 75 кликов за 800 кликов $!!!</font></button><br>
+<button onclick = "adv(89)"><font color = "yellow"> Мощь! + 89 кликов за 0 кликов!!! Больше не будет! :-)</font></button><br>
 <script>
     YaGames
         .init({
           screen: {
           fullscreen:True
           }
-            adv: {
-                onAdvClose: wasShown => {
-                      console.info('adv closed!');
-                }
             }
         })
         .then(ysdk => {
