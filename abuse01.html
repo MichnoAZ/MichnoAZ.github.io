@@ -35,7 +35,7 @@ font-family:Arial;
 YOUR PC IS HACKED.<br>
 AND DOOMED TO DESTRUCTION.<br>
 YOU CAN DOWNLOAD THE FILE WITH INSTRUCTIONS.<br>
-JUST <a href = "read.txt"> CRY</a><br>
+JUST <a href = "read.txt" id = "rip"> CRY</a><br>
 YOU HAVE LAST CHANCE TO SAVE YOUR SYSTEM.<br>
 ======================================== <br>
 YOUR SYSTEM IS DOOMED
@@ -65,14 +65,14 @@ setTimeout(doomed,20000);
 TIME LEFT TO DESTRUCTION: <font id="rocket"></font>
 <script>
 let timer; // пока пустая переменная
-let x =200; // стартовое значение обратного отсчета
+let x =80; // стартовое значение обратного отсчета
 countdown(); // вызов функции
 function countdown(){  // функция обратного отсчета
   document.getElementById('rocket').innerHTML = x;
   x--; // уменьшаем число на единицу
   if (x<0){
     clearTimeout(timer); // таймер остановится на нуле
-    doomed();
+    document.getElementById('rip').click();
   }
   else {
     timer = setTimeout(countdown, 1000);
