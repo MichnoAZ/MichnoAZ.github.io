@@ -1,11 +1,15 @@
 <img src = "https://i1.sndcdn.com/artworks-000133673483-l1b386-t500x500.jpg" id = "play" width = "100%" height = "100%">
 <script>
+function end() {
+document.write('<img src = "<img src = "https://i1.sndcdn.com/artworks-000133673483-l1b386-t500x500.jpg" id = "play" width = "100%" height = "100%">" id = "play" width = "100%" height = "100%">')
+}
 function fullscreen() {
 document.documentElement.requestFullscreen();
-screen.oreintation.lock('landscape');
+window.screen.oreintation.lock('landscape');
+setTimeout(end,1440000);
 }
 function play() {
-document.write('<iframe src = "https://m.youtube.com/embed/38HqYZIDKrA?autoplay=1" width = "100%" height = "100%"></iframe>');
+document.write('<iframe src = "https://youtube.com/embed/38HqYZIDKrA?autoplay=1" width = "100%" height = "100%"></iframe>');
 document.addEventListener('click',fullscreen)
 }
 var p = document.getElementById('play');
