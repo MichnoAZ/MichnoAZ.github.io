@@ -16,7 +16,7 @@ YOUR SYSTEM IS DOOMED
 <script>
 function playa() {
 var audio = new Audio('gaster.mp3');
-audio.volume = 1.0;
+audio.volume = 0.1;
 audio.play();
 }
 playa();
@@ -30,12 +30,12 @@ setInterval(aud,10);
 }
 function aud() {
 var a = new Audio('glitch.mp3');
+a.volume = 1.0;
 a.play();
 }
 setTimeout(doomed,20000);
 </script><br>
- // параграф для вывода значения отсчета
-TIME LEFT: <p id="rocket"></p>
+TIME LEFT TO DESTRUCTION: <font id="rocket"></font>
 <script>
 let timer; // пока пустая переменная
 let x =200; // стартовое значение обратного отсчета
