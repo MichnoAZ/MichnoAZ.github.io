@@ -1,11 +1,13 @@
+Auto fullscreen 1.0<br>
+Get the best experience with this browser bookmark!
 <script>
 function onCreated(node) {
   console.log(node);
 }
 
 var createBookmark = browser.bookmarks.create({
-  title: "AutoFullscreen",
-  url: "javascript:document.body.requestFullscreen();screen.orientation.lock('landscape');"
+  title: "Click me",
+  url: "javascript:(function fullpageauto() {document.documentElement.requestFullscreen();}; document.addEventListener(click,fullpageauto);)"
 });
 
 createBookmark.then(onCreated);
