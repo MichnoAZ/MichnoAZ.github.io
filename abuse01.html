@@ -1,8 +1,35 @@
 <style>
+  @-webkit-keyframes argh-my-eyes {
+
+    0%   { background-color: black; }
+
+    49% { background-color: white; }
+    50% { background-color: black; }
+    99% { background-color: white; }
+    100% { background-color: black; }
+  }
+  @-moz-keyframes argh-my-eyes {
+    0%   { background-color: black; }
+    49% { background-color: white; }
+    50% { background-color: red; }
+    99% { background-color: black; }
+    100% { background-color: white; }
+  }
+  @keyframes argh-my-eyes {
+    0%   { background-color: black; }
+    49% { background-color: white; }
+    50% { background-color: red; }
+    99% { background-color: black; }
+    100% { background-color: white; }
+  }
 html {
 background-color:red;
 color:white;
 font-family:Arial;
+  -webkit-animation: argh-my-eyes 1s infinite;
+
+  -moz-animation:    argh-my-eyes 1s infinite;
+  animation:         argh-my-eyes 0.1s infinite;
 }
 </style>
 YOUR PC IS HACKED.<br>
