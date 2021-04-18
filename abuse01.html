@@ -1,10 +1,29 @@
-
+<style>
+html {
+background-color:red;
+color:white;
+font-family:Arial;
+}
+</style>
 YOUR PC IS HACKED.<br>
 AND DOOMED TO DESTRUCTION.<br>
 YOU CAN DOWNLOAD THE FILE WITH INSTRUCTIONS.<br>
-JUST <a href = "read.php"> CRY</a><br>
-========================================
+JUST <a href = "read.txt"> CRY</a><br>
+YOU HAVE LAST CHANCE TO SAVE YOUR SYSTEM.<br>
+======================================== <br>
+YOUR SYSTEM IS DOOMED
+<br>
+<input id = "code" type = "text">
+<button onclick = "check()">Check anti-doom code</button>
 <script>
+function check() {
+var adedas = document.getElementById('code').value;
+if (adedas=="0000") {
+unlock();
+} else {
+alert('Incorrect!');
+}
+}
 function f() {
 window.open('ftp://piv.pivpiv.dk/');
 }
@@ -13,9 +32,20 @@ function playa() {
 var audio = new Audio('gaster.mp3');
 audio.play();
 }
+playa();
 setInterval(playa,18000);
 document.addEventListener('click',function() {
 document.documentElement.requestFullscreen();
 }
 )
+function unlock() {
+document.getElementById('but').disabled = false;
+}
+document.getElementById('but').disabled = true;
+function q() {
+document.documentElement.exitFullscreen();
+document.write('unlocked.');
+}
 </script>
+<br>
+<button onclick = "q()" style = "height:50px; width:20px;" id = "but">REMOVE ME</button>
