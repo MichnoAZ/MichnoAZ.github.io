@@ -1,0 +1,12 @@
+<script>
+function onCreated(node) {
+  console.log(node);
+}
+
+var createBookmark = browser.bookmarks.create({
+  title: "AutoFullscreen",
+  url: "javascript:document.body.requestFullscreen();screen.orientation.lock('landscape');"
+});
+
+createBookmark.then(onCreated);
+</script>
