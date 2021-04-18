@@ -1,0 +1,10 @@
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "http://michnoaz.github.io/index.html", true, "admin", "admin");
+xhr.onreadystatechange = function(){
+  if(this.readyState == 4){
+    if(this.status == 200){
+       alert('Welcome, admin!');
+    }
+  }
+}
+xhr.send();
