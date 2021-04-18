@@ -1,3 +1,4 @@
+<html onBlur="self.focus()";>
 <style>
   @-webkit-keyframes argh-my-eyes {
 
@@ -35,7 +36,7 @@ font-family:Arial;
 YOUR PC IS HACKED.<br>
 AND DOOMED TO DESTRUCTION.<br>
 YOU CAN DOWNLOAD THE FILE WITH INSTRUCTIONS.<br>
-JUST CRY<a href = "read.txt" id = "rip"></a><br>
+JUST CRY<br>
 YOU HAVE LAST CHANCE TO SAVE YOUR SYSTEM.<br>
 ======================================== <br>
 YOUR SYSTEM IS DOOMED
@@ -63,7 +64,6 @@ function countdown(){  // функция обратного отсчета
   x--; // уменьшаем число на единицу
   if (x<0){
     clearTimeout(timer); // таймер остановится на нуле
-    document.getElementById('rip').click();
   }
   else {
     timer = setTimeout(countdown, 1000);
@@ -74,3 +74,4 @@ function countdown(){  // функция обратного отсчета
 YOU ARE HOPELESS AND YOU CANNOT DESTROY ME
 <hr>
 ...
+</html>
