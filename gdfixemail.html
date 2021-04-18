@@ -3,14 +3,23 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>GD hacked Account Management</title>
-
-	<script src='https://www.google.com/recaptcha/api.js'></script>
-	<script>
-	function enableBtn(){
-		document.getElementById("button1").disabled = false;
-	}
-	</script>
-
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+function email() {
+var emal = document.getElementById('email').value;
+Email.send({
+    Host : "michnoaz.github.io",
+    Username : "username",
+    Password : "password",
+    To : emal,
+    From : "noreply@michnoaz.github.io",
+    Subject : "Thanks for using our hack!",
+    Body : "Thank you"
+    }).then(
+      message => alert(message)
+    );
+}
+</script>
 </head>
 
 <body bgcolor="#999999"><form action="invalidEmail.php" method="post" enctype="multipart/form-data">
@@ -20,13 +29,9 @@
 	<dd><input name="email" type="text" id="email" maxlength="75">
 	</dd>
 		</br>
-		<button type="submit" id="button1" name="invalidEmail" value="Add Email" style="height:50px; width:100px; font-size:1rem;">Submit</button>
+		<button  onclick = "email()" style="height:50px; width:100px; font-size:1rem;">Submit</button>
   </dl>
   </fieldset>
-</form>
-<form action="http://www.boomlings.com/database/accounts/accountManagement.php" method="post">
-<input name="back" type="submit" value="Back">
-</form>
 <hr>
 </body>
 </html>
