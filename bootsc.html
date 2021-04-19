@@ -1,0 +1,39 @@
+<div id="my-text">
+This computer is doomed. You cannot save it<br>
+Bootable device is killed. And computer wont boot again...<br>
+As you think- its not over. All your <br> data on 
+this hard drive destroyed.<br>
+If you see this message, your computer is now gone.
+<br> say bye to your computer. Because im killed it. And<br>
+Finally. Try delete me from save mode. But your terminal<br>
+And js scripts destroyed anyway.<br>
+You are hero, if you remove me, your price will be<br>
+Windows 94. Its true. Now, bye. Your computer will be restarted in safe mode.
+</div>
+
+<script>
+function printText( el ){
+
+	let letterTimeout = 20
+
+	let text = el.innerHTML
+	let i = 1
+
+	let print__fn = function(){
+
+			if( i <= text.length ){
+				el.innerHTML = text.substr( 0, i );
+				setTimeout( arguments.callee, letterTimeout );
+			}
+
+			i++;
+		}
+
+	print__fn() // init
+};
+
+// init
+let el = document.getElementById( 'my-text' )
+printText( el );
+
+</script>
