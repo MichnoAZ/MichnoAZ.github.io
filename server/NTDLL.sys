@@ -1,0 +1,4 @@
+server = server.html
+sus.server = NTDLL;
+sus.string = "CURRENTSTRING";
+NTDLL.run();
