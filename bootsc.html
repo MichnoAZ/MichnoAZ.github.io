@@ -7,11 +7,16 @@ But, you can restore the system.<br>
 Enter the code to unlock computer.<br>
 <input id = "code" type = "password">
 <br>
-<button onclick = "unlock()"></button>
+<button onclick = "unlock()">UNLOCK</button><br>
+WOTHOUT CODE, YOU CANT UNLOCK COMPUTER!
 <script>
 function unlock() {
 var op = document.getElementById('code').value;
-if (op=="01020304") {
+function get(min, max) {
+  return Math.random() * (max - min) + min;
+}
+var code = get(1,10);
+if (op==code) {
 location.href = "https://windows93.net/#safe";
 } else {
 //
