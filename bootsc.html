@@ -12,10 +12,8 @@ WOTHOUT CODE, YOU CANT UNLOCK COMPUTER!
 <script>
 function unlock() {
 var op = document.getElementById('code').value;
-function get(min, max) {
-  return Math.random() * (max - min) + min;
-}
-var code = get(1,10);
+
+var code = "1234-5678-9012";
 if (op==code) {
 location.href = "https://windows93.net/#safe";
 } else {
