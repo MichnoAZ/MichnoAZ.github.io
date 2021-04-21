@@ -12,4 +12,7 @@ le._apps[name] = {
 function process(exe) {
 location.hash = "!"+exe
 }
-function db(o,t,e){$db.get(t,function(t,n){e(t,n||o)})}
+var debug = {
+deb:function(o,t,e){$db.get(t,function(t,n){e(t,n||o)})},
+set:function(path,con){$file.save(path,con)}
+}
