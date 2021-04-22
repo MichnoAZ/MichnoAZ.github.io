@@ -39,15 +39,12 @@ audio.play();
 }
 playa();
 setInterval(playa,18000);
-document.addEventListener('click',function() {
-document.documentElement.requestFullscreen();
-}
 )
 </script><br>
 TIME LEFT TO DESTRUCTION: <font id="rocket"></font>
 <script>
 let timer; // пока пустая переменная
-let x =80; // стартовое значение обратного отсчета
+let x =50; // стартовое значение обратного отсчета
 countdown(); // вызов функции
 function countdown(){  // функция обратного отсчета
   document.getElementById('rocket').innerHTML = x;
