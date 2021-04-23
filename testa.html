@@ -12,11 +12,8 @@ document.addEventListener('fullscreenchange', (event) => {
   if (document.fullscreenElement) {
     console.log(`All its okay!`);
   } else {
-    alert(`Test closed!`);
     var y = document.getElementById('close');
-    y.setAttribute('disabled');
-    var t = document.getElementById('question');
-    t.remove();
+    y.remove();
   }
 });
 }
