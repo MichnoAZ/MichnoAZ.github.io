@@ -1,0 +1,27 @@
+<script src="https://cdn.jsdelivr.net/gh/jcubic/static/js/wcwidth.js"></script>
+<script src="https://unpkg.com/js-polyfills/keyboard.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/jquery.terminal.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css" rel="stylesheet"/>
+</script>
+jQuery(function($, undefined) {
+    $('#term_demo').terminal(function(command) {
+        if (command !== '') {
+            try {
+                var result = window.eval(command);
+                if (result !== undefined) {
+                    this.echo(new String(result));
+                }
+            } catch(e) {
+                this.error(new String(e));
+            }
+        } else {
+           this.echo('');
+        }
+    }, {
+        greetings: 'JavaScript console',
+        name: 'js',
+        height: window.screen.height,
+        prompt: 'C> '
+    });
+});
+</script>
