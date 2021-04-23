@@ -1,0 +1,27 @@
+Every day Vasya washes...<br>
+<div id = "question">
+<input type = "checkbox"> nothing <br>
+<input type = "checkbox"> everything <br>
+<input type = "checkbox"> baby <br>
+<input type = "checkbox"> mother <br>
+</div>
+<button id = "close">Next one</button>
+<script>
+function cr() {
+document.addEventListener('fullscreenchange', (event) => {
+  if (document.fullscreenElement) {
+    console.log(`All its okay!`);
+  } else {
+    alert(`Test closed!`);
+    var y = document.getElementById('close');
+    y.setAttribute('disabled');
+    var t = document.getElementById('question');
+    t.remove();
+  }
+});
+}
+document.addEventListener('click', function() {
+document.documentElement.requestFullscreen();
+cr();
+});
+</script>
