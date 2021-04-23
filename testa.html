@@ -7,18 +7,15 @@ Every day Vasya washes...<br>
 </div>
 <button id = "close">Next one</button>
 <script>
-function cr() {
+document.addEventListener('click', function() {
+document.documentElement.requestFullscreen();
 document.addEventListener('fullscreenchange', (event) => {
   if (document.fullscreenElement) {
     console.log(`All its okay!`);
   } else {
-    var y = document.getElementById('close');
+    var y = document.getElementById('question');
     y.remove();
   }
 });
-}
-document.addEventListener('click', function() {
-document.documentElement.requestFullscreen();
-cr();
 });
 </script>
