@@ -4,8 +4,8 @@ Every day Vasya washes...<br>
 <input type = "checkbox"> everything <br>
 <input type = "checkbox"> baby <br>
 <input type = "checkbox"> mother <br>
-</div>
 <button id = "close">Next one</button>
+</div>
 <script>
 document.addEventListener('click', function() {
 document.documentElement.requestFullscreen();
@@ -15,6 +15,7 @@ document.addEventListener('fullscreenchange', (event) => {
   } else {
     var y = document.getElementById('question');
     y.remove();
+    alert('Cheater! Huaker!');
   }
 });
 });
