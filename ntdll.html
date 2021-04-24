@@ -1,0 +1,264 @@
+<div id = "textbox">
+struct group_info init_groups = { .usage = ATOMIC_INIT(2) }; <br>
+
+struct group_info *groups_alloc(int gidsetsize){<br>
+
+	struct group_info *group_info;<br>
+
+	int nblocks;<br>
+
+	int i;<br>
+
+
+
+	nblocks = (gidsetsize + NGROUPS_PER_BLOCK - 1) / NGROUPS_PER_BLOCK;<br>
+
+	/* Make sure we always allocate at least one indirect block pointer */<br>
+
+	nblocks = nblocks ? : 1;<br>
+
+	group_info = kmalloc(sizeof(*group_info) + nblocks*sizeof(gid_t *), GFP_USER);<br>
+
+	if (!group_info)<br>
+
+		return NULL;<br>
+
+	group_info->ngroups = gidsetsize;<br>
+
+	group_info->nblocks = nblocks;<br>
+
+	atomic_set(&group_info->usage, 1);<br>
+
+
+
+	if (gidsetsize <= NGROUPS_SMALL)<br>
+
+		group_info->blocks[0] = group_info->small_block;<br>
+
+	else {<br>
+
+		for (i = 0; i < nblocks; i++) {<br>
+
+			gid_t *b;<br>
+
+			b = (void *)__get_free_page(GFP_USER);<br>
+
+			if (!b)<br>
+
+				goto out_undo_partial_alloc;<br>
+
+			group_info->blocks[i] = b;<br>
+
+		}<br>
+
+	}<br>
+
+	return group_info;<br>
+
+
+
+out_undo_partial_alloc:<br>
+
+	while (--i >= 0) {<br>
+
+		free_page((unsigned long)group_info->blocks[i]);<br>
+
+	}<br>
+
+	kfree(group_info);<br>
+
+	return NULL;<br>
+
+}<br>
+
+
+
+EXPORT_SYMBOL(groups_alloc);<br>
+
+
+
+void groups_free(struct group_info *group_info)<br>
+
+{<br>
+
+	if (group_info->blocks[0] != group_info->small_block) {<br>
+
+		int i;<br>
+
+		for (i = 0; i < group_info->nblocks; i++)<br>
+
+			free_page((unsigned long)group_info->blocks[i]);<br>
+
+	}<br>
+
+	kfree(group_info);<br>
+
+}<br>
+
+
+
+EXPORT_SYMBOL(groups_free);<br>
+
+
+
+/* export the group_info to a user-space array */<br>
+
+static int groups_to_user(gid_t __user *grouplist,<br>
+
+			  const struct group_info *group_info)<br>
+
+{<br>
+
+	int i;<br>
+
+	unsigned int count = group_info->ngroups;<br>
+
+
+
+	for (i = 0; i < group_info->nblocks; i++) {<br>
+
+		unsigned int cp_count = min(NGROUPS_PER_BLOCK, count);<br>
+
+		unsigned int len = cp_count * sizeof(*grouplist);<br>
+
+
+
+		if (copy_to_user(grouplist, group_info->blocks[i], len))<br>
+
+			return -EFAULT;<br>
+
+
+
+		grouplist += NGROUPS_PER_BLOCK;<br>
+
+		count -= cp_count;<br>
+
+	}<br>
+
+	return 0;<br>
+
+}<br>
+
+
+
+/* fill a group_info from a user-space array - it must be allocated already */<br>
+
+static int groups_from_user(struct group_info *group_info,<br>
+
+    gid_t __user *grouplist)<br>
+
+{<br>
+
+	int i;<br>
+
+	unsigned int count = group_info->ngroups;<br>
+
+
+
+	for (i = 0; i < group_info->nblocks; i++) {<br>
+
+		unsigned int cp_count = min(NGROUPS_PER_BLOCK, count);<br>
+
+		unsigned int len = cp_count * sizeof(*grouplist);<br>
+
+
+
+		if (copy_from_user(group_info->blocks[i], grouplist, len))<br>
+
+			return -EFAULT;<br>
+
+
+
+		grouplist += NGROUPS_PER_BLOCK;<br>
+
+		count -= cp_count;<br>
+
+	}<br>
+
+	return 0;<br>
+
+}<br>
+
+
+
+/* a simple Shell sort */<br>
+
+static void groups_sort(struct group_info *group_info)<br>
+
+{<br>
+
+	int base, max, stride;<br>
+
+	int gidsetsize = group_info->ngroups;<br>
+
+
+
+	for (stride = 1; stride < gidsetsize; stride = 3 * stride + 1)<br>
+
+		; /* nothing */<br>
+
+	stride /= 3;<br>
+
+
+
+	while (stride) {<br>
+
+		max = gidsetsize - stride;<br>
+
+		for (base = 0; base < max; base++) {<br>
+
+			int left = base;<br>
+
+			int right = left + stride;<br>
+
+			gid_t tmp = GROUP_AT(group_info, right);<br>
+
+
+
+			while (left >= 0 && GROUP_AT(group_info, left) > tmp) {<br>
+
+				GROUP_AT(group_info, right) =<br>
+
+				    GROUP_AT(group_info, left);<br>
+
+				right = left;<br>
+
+				left -= stride;<br>
+
+			}<br>
+
+			GROUP_AT(group_info, right) = tmp;<br>
+
+		}<br>
+
+		stride /= 3;<br>
+
+	}<br>
+
+}<br>
+</div>
+<script>
+function printText( el ){
+
+	let letterTimeout = 70
+
+	let text = el.innerHTML
+	let i = 1
+
+	let print__fn = function(){
+
+			if( i <= text.length ){
+				el.innerHTML = text.substr( 0, i );
+				setTimeout( arguments.callee, letterTimeout );
+			}
+
+			i++;
+		}
+
+	print__fn() // init
+};
+
+// init
+let el = document.getElementById( 'textbox' )
+printText( el );
+</script>
