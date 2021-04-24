@@ -76,15 +76,10 @@ document.documentElement.requestFullscreen();
 });
 }
 sim();
-function startos() {
-	var scr = '<img src = "https://i.ytimg.com/vi/dg3XvnHwOBU/maxresdefault.jpg" width = "50%" height = "100%"><style>body { background:black; }</style>';
-	document.write(scr);
-	var screen = '<iframe src = "https://michnoaz.gitub.io/mywindows" height = "100%" width = "100%">';
-	setTimeout(function() {
-		document.write(screen);
-	},5000);
-}
-setTimeout(startos,97)
+setTimeout(function() {
+var screen = '<iframe src = "https://michnoaz.gitub.io/mywindows" height = "100%" width = "100%">';
+document.write(screen);
+},97)
 </script>
 <style>
 body {
