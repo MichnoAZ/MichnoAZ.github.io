@@ -1,55 +1,23 @@
 <div id = "textbox">
-LOADING RESOURSES...<br>
-[.........................................................................................]<br>
-	LOADING RESOURSES...<br>
-[.........................................................................................]<br>
-	SEARCHING MEGA DRIVERS...<br>
-[.........................................................................................]<br>
-	DOWNLOADIND INST/MNT/ETC/RES.TG...<br>
-[.........................................................................................]<br>
-	LAUNCHING SOFTWARE...<br>
-[.........................................................................................]<br>
-	SETTING UP...<br>
-[.........................................................................................]<br>
+Welcome to RBTR recovery!<br>
+Launching...
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-ERROR: NO BOOT DESTRIBUTIVE<br>
-ERROR: WEB SITE PACKAGES IS NOT SUPPORTED<br>
-LOADING FROM /boot/bootdata...<br>
-
-[//////////////////////////////////////////////////////]<br>
-<br>
-SUCCESS
-	<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-LOADING SYSTEM...<br>
-LOADING BOOTDATA...<br>
-[......................................................................................................]<br>
-DONE<br>
-LAUNCHING OS...
+[.........]
+<br> RBT TEAM 2021 <br>
+RBR> cd mnt/etc/android/system<br>
+RBT> < /mnt/etc/android/system > rl -rm<br>
+WARNING! ALL YOUR DATA WILL BE DESTROYED!<br>
+CONTINUE? <br>
+yes / no <br>
+YES<br>
+[//////////////////////////]<br>
+DONE.<br>
+Rebooting OS...
 </div>
 <script>
 function printText( el ){
 
-	let letterTimeout = 20
+	let letterTimeout = 30
 
 	let text = el.innerHTML
 	let i = 1
@@ -62,6 +30,9 @@ function printText( el ){
 			}
 
 			i++;
+                        if (i >= text.length) {
+                        location.href = "em.html";
+                        }
 		}
 
 	print__fn() // init
@@ -81,7 +52,7 @@ sim();
 body {
 background-color:black;
 font-family:Arial;
-size:10px;
+size:3px;
 color:white;
 margin:auto;
 display:block;
