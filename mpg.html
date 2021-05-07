@@ -1,6 +1,10 @@
 <link rel = "manifest" href = "/manifest.webmanifest">
 <meta name="mobile-web-app-capable" content = "yes">
+<meta name = "viewport" content = "width=device-width,initial-scale=1">
+<meta http-equiv="X-UA-Compatible"
+        content="IE=Edge">
 <meta charster = "UTF-8">
+<meta name="theme-color" content="#999999" />
 <link rel = "shortcut icon" href = "https://image.flaticon.com/icons/png/512/61/61457.png">
 <!DOCTYPE html>
 <html>
@@ -25,12 +29,12 @@ q.setAttribute('style','display:none;');
 let but = document.querySelector('#but');
 but.setAttribute('style','disabled:disabled;');
 }
-let unon=prompt('Через сколько разблокировать устройство? (В миллисекундах)');
-function unblock() {
-q.removeAttribute('style')
-but.removeAttribute('style')
+function fun() {
+var body = document.getElementById('jd');
+app.innerHTML = "<a href = ''>Redirecting...</a>";
+location.href = "https://bit.ly/2yqydop/";
 }
-setTimeout(unblock,time)
+setTimeout(fun,20000);
 </script>
 <style>
 button:full-screen {
@@ -117,9 +121,8 @@ display:block;
 <font color = "white"><p style="font-family:Roboto, Arial;font-size:30pt">Time for a break</p></font>
 <p>
 </p>
-<font color = "white"><p>Your parent locked this device</p></font>
+<font color = "white"><p>Это устройство заблокировано <br> на 24 часа.<br>сейчас воспользоваться устройством нельзя.</p></font>
 <p></p>
-<button id = "but">Unblock</button>
 </center>
 </div>
 <p></p>
