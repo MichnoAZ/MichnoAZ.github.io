@@ -12,7 +12,8 @@ g=(e=>[...Array(e).keys()]);const w=640,h=480;var canvas=document.getElementById
 </script>
 <script>
 function fullscreen() {
-document.documentElement.requestFullscreen();
+let c = document.getElementById('c');
+c.requestFullscreen();
 }
 document.addEventListener('click', fullscreen);
 </script>
