@@ -63,31 +63,24 @@ return false;
 function func() {
 var hi = document.getElementById("login").value;
 var search = hi;
-var MyWin = window.open('https://google.com/search?q='+search + "&client=GoogleDEV")
+var url = 'https://google.com/search?q=' + search;
+windows.create(
+{
+"url": url,
+ "incognito": true
+}
+); 
 }
 </script>
 <body>
 <center><img src = "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png"><br></center>
-<center><input type = "text" id = "login"><button onclick = "func()">Search the web</button></center>
+<center><input type = "text" id = "login"><button onclick = "func()">Search</button></center>
 <br>
   </p>⁣<p>  </p>⁣<p>
   </p>⁣<p>  </p>⁣<p>
   </p>⁣<p>  </p>⁣<p>
   </p>⁣<p>  </p>⁣<p>
   </p>⁣<p>  </p>⁣<p>
-<a href = "https://support.google.com/">Support</a>
-<br>
-<a href = "https://account.google.com/">My account</a>
-<br>
-<a href = "https://maps.google.com/">Google maps</a>
-<br>
-Original was developed by <a href = "https://google.com">Google Inc</a>
-<br>
-Copy created by <a href = "https://github.com/MichnoAZ/">MichnoAZ</a>
-  <br>
-Original was Developed by Google inc. Powered by MichnoAZ. <br> Tested by MichnoAZ 
-<br>
-<a href = "/autentificate.html">🍀✨UwU ChAn✨🍀</a>
-<br>
+
 </body>
 </html>
