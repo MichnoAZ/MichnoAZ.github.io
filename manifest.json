@@ -1,9 +1,9 @@
 {
   "name": "✨🍀UwU ChAn🍀✨",
-  "short_name": "MichnoAZ",
+  "short_name": "Safari",
   "start_url": "index.html",
   "scope":"/",
-  "display": "fullscreen",
+  "display": "Standalone",
   "orientation": "portrait",
   "description": "Just a UwU ChAn PWA",
   "features": [
@@ -15,17 +15,17 @@
   "theme_color": "#1976d2",
   "icons": [
     {
-      "src": "https://jcw87.github.io/c2-sans-fight/icon-16.png",
+      "src": "https://icons.iconarchive.com/icons/wineass/ios7-redesign/16/Safari-icon.png",
       "sizes": "16x16",
       "type": "image/png"
     },
     {
-      "src": "https://jcw87.github.io/c2-sans-fight/icon-32.png",
+      "src": "https://icons.iconarchive.com/icons/wineass/ios7-redesign/32/Safari-icon.png",
       "sizes": "32x32",
       "type": "image/png"
     },
     {
-      "src": "https://jcw87.github.io/c2-sans-fight/icon-128.png",
+      "src": "https://icons.iconarchive.com/icons/wineass/ios7-redesign/128/Safari-icon.png",
       "sizes": "128x128",
       "type": "image/png"
     },
