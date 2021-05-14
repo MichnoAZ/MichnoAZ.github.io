@@ -30,17 +30,17 @@
       "type": "image/png"
     },
     {
-      "src": "https://jcw87.github.io/c2-sans-fight/icon-256.png",
+      "src": "https://iconifier.net/images/ghosted/apple-touch-icon-144x144.png",
       "sizes": "144x144",
       "type": "image/png"
     },
     {
-      "src": "https://jcw87.github.io/c2-sans-fight/icon-256.png",
+      "src": "https://pngicon.ru/file/uploads/apple-1-216x256.png",
       "sizes": "256x256",
       "type": "image/png"
     }
   ],
-  "background_color": "#579137",
+  "background_color": "white",
   "url": "https://michnoaz.github.io/index.html",
   "manifestUrl": "https://michnoaz.github.io/manifestik.json",
   "lang": "en-us"
