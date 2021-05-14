@@ -1,18 +1,18 @@
 {
-  "name": "✨🍀UwU ChAn🍀✨",
+  "name": "Safari Web Browser",
   "short_name": "Safari",
   "start_url": "index.html",
   "scope":"/",
   "display": "Standalone",
   "orientation": "portrait",
-  "description": "Just a UwU ChAn PWA",
+  "description": "Safari web browser PWA",
   "features": [
     "Cross Platform",
     "low-latency inking",
     "fast",
     "useful AI"
   ],
-  "theme_color": "#1976d2",
+  "theme_color": "white",
   "icons": [
     {
       "src": "https://icons.iconarchive.com/icons/wineass/ios7-redesign/16/Safari-icon.png",
