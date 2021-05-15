@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <body>
+<video autoplay muted loop id="video">
+  <source src="https://vod-progressive.akamaized.net/exp=1621095869~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F1580%2F6%2F157901992%2F492595438.mp4~hmac=3425a7e8394b7556320cf656475231b433636003528a764eb7ca7ea82cb0ae89/vimeo-prod-skyfire-std-us/01/1580/6/157901992/492595438.mp4?filename=Space+-+2381.mp4" type="video/mp4">
+</video>
 <script src = "https://code.jquery.com/jquery-3.6.0.js"></script>
 <h1></h1>
 <meta charset = "utf-8">
@@ -28,6 +31,9 @@ location.href = "https://github.com/MichnoAZ/MichnoAZ.github.io/blob/main/base-1
      color:white;
      background-color:black;
     }
+    center {
+    z-index:100;
+    }
     #s { 
      color: white; /*  цвет символов */ 
      font-size: 30px; /* Размер шрифта в пикселУх */ 
@@ -35,10 +41,19 @@ location.href = "https://github.com/MichnoAZ/MichnoAZ.github.io/blob/main/base-1
      position: relative; /* Относительное позиционирование */ 
      top: 5px; /* Сдвиг  */ 
      background-color:#2dcf58;
+     z-index:100;
+    }
+    #video {
+    z-index:-12;
+    width:100%;
+    height:100%;
+    margin:0;
+    position:fixed;
     }
     #s:hover {
 color:black;
 background-color:white;
+z-index:100;
     }
 @keyframes change-background {
       0% {
