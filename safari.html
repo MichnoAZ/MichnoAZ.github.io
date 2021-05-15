@@ -22,8 +22,8 @@
 <span onclick = "dwnl()" id = "s">Скачать.</span><br>
 </center>
 <script>
-let detect = new MobileDetect(window.navigator.userAgent)
-var user = detect.phone();
+var detect = new MobileDetect(window.navigator.userAgent)
+var user = detect.os();
 var ider = document.getElementById('dev');
 ider.innerHTML = user;
 function dwnl() {
