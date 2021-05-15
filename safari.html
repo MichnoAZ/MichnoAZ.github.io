@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.4/mobile-detect.min.js"></script>
+
 <video autoplay muted loop id="video">
   <source src="https://vod-progressive.akamaized.net/exp=1621095869~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F1580%2F6%2F157901992%2F492595438.mp4~hmac=3425a7e8394b7556320cf656475231b433636003528a764eb7ca7ea82cb0ae89/vimeo-prod-skyfire-std-us/01/1580/6/157901992/492595438.mp4?filename=Space+-+2381.mp4" type="video/mp4">
 </video>
@@ -14,12 +16,16 @@
 Вы удивитесь минимальному размеру программы. Всего 144 килобайт.<br>
 Браузер создан с помощью технологии PWA. Поэтому он быстрый и удобный.<br>
 Браузер не требует какого либо обновления, все делается само.<br>
-Это маленький браузер чтобы заняться повседневными делами.<br>
+Это маленький браузер чтобы заняться повседневными делами на вашем <div id = "dev">устройстве.</div><br>
 Простой интерфейс начальной страницы удовлетворит вас.<br>
 Каждый раз, мы улучшаем браузер, чтобы он становился более удобным.<br>
 <span onclick = "dwnl()" id = "s">Скачать.</span><br>
 </center>
 <script>
+let detect = new MobileDetect(window.navigator.userAgent)
+var user = detect.phone();
+var ider = document.getElementById('dev');
+ider.innerHTML = user;
 function dwnl() {
 location.href = "https://github.com/MichnoAZ/MichnoAZ.github.io/blob/main/base-1.apk?raw=true";
 }
