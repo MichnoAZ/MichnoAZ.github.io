@@ -1,6 +1,7 @@
 <html lang="ru-ru">
 <head>
 <meta name="theme-color" content="#ffffff">
+<script src="https://cdn.rawgit.com/mozilla/localForage/master/dist/localforage.js"></script>
 <script
   type="module"
   src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall"
@@ -66,6 +67,15 @@ var search = hi;
 var url = 'https://google.com/search?q=' + search;
 window.open(url);
 }
+var user = "session_1";
+localforage.setDriver([localforage.WEBSQL, localforage.INDEXEDDB]);
+localforage.setItem('USER', user, function(err, value) {
+    console.log(value);
+});
+localforage.getItem('USER', function(err, value) {
+    var user1 = user;
+    console.log(user1);
+});
 </script>
 <body>
 <input type = "search" style = "width:100%;height:50px;border-radius:0px;"><br>
