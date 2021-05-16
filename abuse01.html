@@ -1,25 +1,16 @@
 <html onBlur="self.focus()";>
+<meta name = "viewport" content = "width=device-width,initial-scale=1">
 <style>
-  @-webkit-keyframes argh-my-eyes {
-    1% { background: url(http://images.wikia.com/mugen/images/2/26/Sonic_exe_the_real_title_screen_by_secretagentjonathon-d5hapdl.png); }
-100% { background:black; }
-  }
-  @-moz-keyframes argh-my-eyes {
-    1% { background: url(http://images.wikia.com/mugen/images/2/26/Sonic_exe_the_real_title_screen_by_secretagentjonathon-d5hapdl.png); }
-  100% { background:black; }
-}
+
   @keyframes argh-my-eyes {
-    1% { background: url(http://images.wikia.com/mugen/images/2/26/Sonic_exe_the_real_title_screen_by_secretagentjonathon-d5hapdl.png); }
-     100% { background:black; }
+    1% {background:grey;}
+   100% { background:black; }
  
  }
 html {
 background-color:red;
 color:white;
 font-family:Arial;
-  -webkit-animation: argh-my-eyes 1s infinite;
-
-  -moz-animation:    argh-my-eyes 1s infinite;
   animation:         argh-my-eyes 0.5s infinite;
 }
 </style>
@@ -32,9 +23,10 @@ YOU HAVE LAST CHANCE TO SAVE YOUR SYSTEM.<br>
 YOUR SYSTEM IS DOOMED
 <br>
 <script>
+document.addEventListener("click",function(){document.documentElement.requestFullscreen()});
 function playa() {
 var audio = new Audio('gaster.mp3');
-audio.volume = 0.1;
+audio.volume = 2.0;
 audio.play();
 }
 playa();
