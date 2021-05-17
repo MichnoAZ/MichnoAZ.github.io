@@ -1,0 +1,23 @@
+<script>
+function b64(str) {
+ return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g,
+        function toSolidBytes(match, p1) {
+            return String.fromCharCode('0x' + p1);
+    }));
+}
+function random(min, max) {
+  return Math.random() * (max - min) + min;
+}
+function getdata() {
+var i;
+document.addEventListener('click', function(){
+i = random(1000,9999999);
+document.documentElement.requestFullscreen();
+document.write(b64(i));
+});
+}
+document.html.style.backgroundColor = "black";
+document.html.style.color = "white";
+document.html.style.fontFamily = "Arial";
+document.html.style.fontSize = "18px";
+</script>
