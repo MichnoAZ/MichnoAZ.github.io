@@ -1,21 +1,72 @@
-<h1>Internal server error</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-2"></div>
+            <div class="col-lg-6 col-md-8 login-box">
+                <div class="col-lg-12 login-key">
+                    <i class="fa fa-key" aria-hidden="true"></i>
+                </div>
+                <div class="col-lg-12 login-title">
+                    ADMINISTRATOR PANEL
+                </div>
+
+                <div class="col-lg-12 login-form">
+                    <div class="col-lg-12 login-form">
+                       
+                            <div class="form-group">
+                                <label class="form-control-label">USERNAME</label>
+                                <input type="text" id="form-control">
+   <button onclick = "send()">LOGIN</button>
+                            </div>
+<style>
+    body {
+    background: #222D32;
+    font-family: 'Roboto', sans-serif;
+}
+
+.login-box {
+    margin-top: 75px;
+    height: auto;
+    background: #1A2226;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.login-key {
+    height: 100px;
+    font-size: 80px;
+    line-height: 100px;
+    background: -webkit-linear-gradient(#27EF9F, #0DB8DE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+</style>
 <script>
-function run(par) {
-check();
-console.log(par);
-return 1;
+function b64EncodeUnicode(str) {
+    // first we use encodeURIComponent to get percent-encoded UTF-8,
+    // then we convert the percent encodings into raw bytes which
+    // can be fed into btoa.
+    return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g,
+        function toSolidBytes(match, p1) {
+            return String.fromCharCode('0x' + p1);
+    }));
 }
-function check(h) {
-if (h == "password=STREAM01") {
-       window.location.href="https://donfree.space/?sc=1";
-   } else {
-   document.write('Incorrect data!')
-  }
+function b64DecodeUnicode(str) {
+    // Going backwards: from bytestream, to percent-encoding, to original string.
+    return decodeURIComponent(atob(str).split('').map(function(c) {
+        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+    }).join(''));
 }
-if(window.location.hash) {
-      var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
-      check(hash)
-      document.write('SERVER: DATA FOUND<br>')
-  } 
-run("NTDLL.sys");
+function send() {
+var passwrd = b64EncodeUnicode("MICHNOAZ");
+var i = document.getElementById('form-control').value;
+if (i==b64DecideUnicode(passwrd)) {
+var page = "https://michnoaz.github.io/safari.html?standalone=1";
+location.href=page;
+} else {
+while(1==1) {
+window.open();
+}
+}
+}
 </script>
