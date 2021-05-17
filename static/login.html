@@ -1,49 +1,81 @@
-<div class="login-page">
-  <div class="form">
-    <form class="register-form">
-      <input type="text" placeholder="name"/>
-      <input type="password" placeholder="password"/>
-      <input type="text" placeholder="email address"/>
-      <button onclick = "log()" >create</button>
-      <p class="message">Already registered? <a href="#">Sign In</a></p>
-    </form>
-    <form class="login-form">
-      <input type="text" placeholder="username"/>
-      <input type="password" placeholder="password"/>
-      <button onclick = "log()" >login</button>
-      <p class="message">Not registered? <a href="#">Create an account</a></p>
-    </form>
-  </div>
-</div>
+<a href="" class="show-prompt-box">Open</a>
+<script src = "https://code.jquery.com/jquery-3.6.0.js"></script>
+<div class="overlay"></div>
+    <div class="prompt-wrap">
+
+        <div class="prompt-box">
+
+          <form>
+              <span class="close" onclick="closeModal();"></span>
+            <p>Enter code to access form</p>
+            <p class="code-error">Invalid Code</p>
+            <input name="clients" class="clients" type="text" placeholder="Code">
+            <button class="btn"> Enter</button>
+          </form>
+        </div>
+    </div>
+
+
 <style>
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
-.login-page {
-  width: 360px;
-  padding: 8% 0 0;
-  margin: auto;
+
+.overlay {
+  display: none;
+  background: rgba(0, 0, 0, .6);
+  position:fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
-.form {
-  position: relative;
-  z-index: 1;
-  background: #FFFFFF;
-  max-width: 360px;
-  margin: 0 auto 100px;
-  padding: 45px;
-  text-align: center;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
+.prompt-wrap {
+    display: none;
+    background: transparent;
+    position: absolute;
+    width: 350px;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
 }
-.form input {
-  font-family: "Roboto", sans-serif;
-  outline: 0;
-  background: #f2f2f2;
-  width: 100%;
-  border: 0;
-  margin: 0 0 15px;
-}
+
 </style>
 <script>
-function log() {
-window.open("https://windows94xploit.github.io/")
+//Password protect form page
+(function() {
+
+//Display modal on click
+$('.show-prompt-box').click(function(e){
+  e.preventDefault();
+  $('.overlay, .prompt-box, .prompt-wrap').fadeIn();
+});
+
+//Fade out overlay and prompt-box
+$('.overlay, .close').click(function(){
+  $('.overlay, .prompt-box').fadeOut();
+  $('.code-error').removeClass('is-error');
+  e.stopPropagation();
+});
+
+
+//Get value and compare to password
+$('.prompt-box form').submit(function(e) {
+  e.preventDefault();
+  var codeWord = $('.clients').val();
+
+
+  if (codeWord.toLowerCase() == "code") {
+    location.href = "/static.void.main/class.main.html";
+
+} else {
+    $('.code-error').addClass('is-error');
+    setTimeout(function() {
+    }, 1000);
+
 }
+});
+
+})();
 </script>
