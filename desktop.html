@@ -1,0 +1,68 @@
+<html>
+<head>
+<link rel = "favicon" href = "https://atom.io/favicon.ico">
+<link rel = "manifest" href = "/webmanifest.json">
+<title>TermOS premial</title>
+</head>
+<body>
+<button onclick = "i()">
+    <span>
+       <span>
+          bad time simulator
+       </span>   
+    </span>
+</button>
+<button onclick = "o()">
+    <span>
+       <span>
+          Mario simulator
+       </span>   
+    </span>
+</button>
+<button onclick = "p()">
+    <span>
+       <span>
+          Update
+       </span>   
+    </span>
+</button>
+<style>
+button {
+    background: none;
+    border: none;
+    padding: 0;   
+}
+body {
+background:black;
+}
+button span {
+    display: block;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #999;
+    padding: 0;
+    background: #F0F0F0;
+    background: -moz-linear-gradient(top,  #F0F0F0 50%, #D4D4D4 50%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#F0F0F0), color-stop(50%,#D4D4D4));
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F0F0F0', endColorstr='#D4D4D4',GradientType=0 );
+}
+
+button span span {
+    border: 1px solid #fff;
+    padding: 10px;
+}
+</style>
+<script>
+function i() {
+document.write('<iframe src = "https://jcw87.github.io/c2-sans-fight/" frameborder = "0" width="100%" height = "100%"></iframe>');
+}
+function o() {
+document.write('<iframe src = "https://jcw87.github.io/c2-smb1/" frameborder = "0" width="100%" height = "100%"></iframe>');
+}
+function p() {
+document.write('<iframe src = "/update.html" frameborder = "0" width="100%" height = "100%"></iframe>');
+}
+</script>
+</body>
+</html>
