@@ -14,6 +14,7 @@ g=(e=>[...Array(e).keys()]);const w=640,h=480;var canvas=document.getElementById
 function fullscreen() {
 let c = document.getElementById('c');
 c.requestFullscreen();
+screen.orientation.lock("landscape");
 }
 document.addEventListener('click', fullscreen);
 </script>
