@@ -26,7 +26,7 @@ function ci(e, r, s, t) {
 function drlp() {
     for (ob of (c.clearRect(0, 0, w, h), (c.lineWidth = 2), (c.strokeStyle = "black"), o)) c.strokeRect(ob.x - 5, ob.y - 5 + sc, 10, 10);
     for (bo of ((c.lineWidth = 1), (c.strokeStyle = c.fillStyle = "black"), ci(pos.x, pos.y, 10, 1), (c.fillStyle = "black"), b)) ci(bo.x, bo.y + sc, 7);
-    (c.font = "30px Cursive"), c.fillText(sco, 20, 40), window.requestAnimationFrame(drlp);
+    (c.font = "35px Cursive"), c.fillText(sco, 20, 40), window.requestAnimationFrame(drlp);
 }
 function die() {}
 function dist(e, r) {
@@ -38,7 +38,7 @@ function phl() {
     (vel.x *= 0.99),
     (vel.y += 0.1),
     (ns = sc + speed + (pos.y < h / 2 ? 3 - pos.y / (h / 6) : 0)),
-    speed < 4 && (speed += 0.1),
+    speed < 4 && (speed += 0.0001),
     ~~(sc / 300) != ~~(ns / 300) && spwn(~~(9 * ra())),
     (sc = ns),
     pos.y > h && die(),
