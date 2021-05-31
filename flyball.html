@@ -38,7 +38,7 @@ function phl() {
     (vel.x *= 0.99),
     (vel.y += 0.1),
     (ns = sc + speed + (pos.y < h / 2 ? 3 - pos.y / (h / 6) : 0)),
-    speed < 4 && (speed += 0.0001),
+    speed < 4 && (speed += 0.1),
     ~~(sc / 300) != ~~(ns / 300) && spwn(~~(9 * ra())),
     (sc = ns),
     pos.y > h && die(),
