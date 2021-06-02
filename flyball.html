@@ -9,8 +9,8 @@
 </canvas>
 <script>
 g = (e) => [...Array(e).keys()];
-const w = 680,
-    h = 480;
+const w = 680, h = 480;
+var attemptleft = 100;
 var canvas = document.getElementById("c"),
     c = canvas.getContext("2d"),
     phtmr = null,
@@ -28,7 +28,15 @@ function drlp() {
     for (bo of ((c.lineWidth = 1), (c.strokeStyle = c.fillStyle = "black"), ci(pos.x, pos.y, 10, 1), (c.fillStyle = "black"), b)) ci(bo.x, bo.y + sc, 7);
     (c.font = "35px Cursive"), c.fillText(sco, 20, 40), window.requestAnimationFrame(drlp);
 }
-function die() {}
+function die() {
+attemptleft = attemptleft-1;
+if (attemptleft <= 0) {
+alert('Game over!');
+location.reload();
+} else {
+return "arent died";
+}
+}
 function dist(e, r) {
     return (x = e.x - r.x), (y = e.y - r.y), Math.sqrt(x * x + y * y);
 }
