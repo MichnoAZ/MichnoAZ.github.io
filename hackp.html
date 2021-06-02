@@ -1,0 +1,16 @@
+<button id = "btn">click me</button>
+<script>
+var btn = document.getElementById('btn');
+btn.addEventListener('click', function() {
+  let promise = Notification.requestPermission();
+  // wait for permission
+})
+var options = {
+  body: 'Ваше устройство может быть заражено вирусом!',
+  silent: true,
+  vibrate: [200, 100, 200]
+}
+
+var n = new Notification('Test notification', options);
+
+</script>
