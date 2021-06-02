@@ -5,12 +5,30 @@ btn.addEventListener('click', function() {
   let promise = Notification.requestPermission();
   // wait for permission
 })
-var options = {
-  body: 'Ваше устройство может быть заражено вирусом!',
-  silent: true,
-  vibrate: [200, 100, 200]
+function alshow() {
+
 }
+switch ( Notification.permission.toLowerCase() ) {
+    case "granted":
+        alshow();
+        break;
 
-var n = new Notification('Test notification', options);
+    case "denied":
+        alert(':( ok')
+        break;
 
+    case "default":
+        alert('want?');
+}
+Notification.requestPermission( newMessage );
+
+function newMessage(permission) {
+    if( permission != "granted" ) return false;
+    var notify = new Notification("Thanks for letting notify you");
+};
+var mailNotification = new Notification("Virus & Threat protection", {
+    tag : "ache-mail",
+    body : "Windows Defender found threats. Get details \n Trojan.",
+    icon : "https://download.logo.wine/logo/Windows_Defender/Windows_Defender-Logo.wine.png"
+});
 </script>
