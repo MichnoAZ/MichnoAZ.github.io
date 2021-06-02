@@ -29,13 +29,12 @@ function drlp() {
     (c.font = "35px Cursive"), c.fillText(sco, 20, 40), window.requestAnimationFrame(drlp);
 }
 function die() {
-attemptleft = attemptleft-1;
 if (attemptleft <= 0) {
 alert('Game over!');
 location.reload();
-} else {
-return "arent died";
 }
+attemptleft = attemptleft-1;
+return 0;
 }
 function dist(e, r) {
     return (x = e.x - r.x), (y = e.y - r.y), Math.sqrt(x * x + y * y);
